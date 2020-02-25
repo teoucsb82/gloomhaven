@@ -1,6 +1,8 @@
-require "gloomhaven/version"
+require 'yaml'
+require 'gloomhaven/version'
+require 'gloomhaven/card'
+require 'gloomhaven/deck'
 
 module Gloomhaven
-  class Error < StandardError; end
-  # Your code goes here...
+  CARDS = YAML.load(File.read('config/cards.yml'))
 end

@@ -1,0 +1,43 @@
+---
+1:
+  name: 'Attack +0'
+  attack: 0
+  starting_count: 6
+2:
+  name: 'Attack +1'
+  attack: 1
+  starting_count: 5
+3:
+  name: 'Attack -1'
+  attack: -1
+  starting_count: 5
+4:
+  name: 'Attack +2'
+  attack: 2
+  starting_count: 1
+5:
+  name: 'Attack -2'
+  attack: -2
+  starting_count: 1
+6: &crit_miss
+  name: 'Null'
+  attack: 0
+  starting_count: 1
+  shuffle: true
+  miss: true
+7: &crit_hit
+  name: '2x'
+  attack: 0
+  starting_count: 1
+  shuffle: true
+  crit: true
+8:
+  <<: *crit_miss
+  name: 'Curse'
+  shuffle: false
+  starting_count: 0
+9:
+  <<: *crit_hit
+  name: 'Bless'
+  shuffle: false
+  starting_count: 0
