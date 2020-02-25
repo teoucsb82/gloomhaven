@@ -30,10 +30,6 @@ module Gloomhaven
       name.downcase == 'curse'
     end
 
-    def to_s
-      name
-    end
-
     private
 
     # returns yaml-id of the card by name
