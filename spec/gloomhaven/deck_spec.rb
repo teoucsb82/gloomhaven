@@ -2,21 +2,60 @@ RSpec.describe Gloomhaven::Deck do
 
   subject(:deck) { Gloomhaven::Deck.new }
 
-  context 'when deck has not been modified' do
-    describe '#size' do
-      subject(:size) { deck.size }
-      it { expect(size).to eq(20) }
+  describe '#add!' do
+    subject(:add!) { deck.add!(card) }
+    let(:card) { Gloomhaven::Card.find('Attack +1') }
+
+    context 'when card is a valid Gloomhaven::Card object' do
+      it 'adds the card to the deck' do
+        expect(deck.cards.size).to eq(20)
+        add!
+        expect(deck.cards.size).to eq(21)
+      end
+
+      it 'returns the modified array of cards' do
+        expect(add!).to eq(deck.cards)
+      end
     end
 
-    describe '#average_attack' do
-      subject(:average_attack) { deck.average_attack }
-      it { expect(average_attack).to eq(0) }
+    context 'when card is not a Gloomhaven::Card object' do
+      let(:card) { 'I AM A CARD' }
+      it { expect { add! }.to raise_error(TypeError, 'Card must be a Gloomhaven::Card' ) }
+    end
+  end
+
+  describe '#bless!' do
+    subject(:bless!) { deck.bless! }
+
+    it 'adds 1 bless card to the deck' do
+      expect(deck.cards.select { |card| card.name == 'Bless' }.count).to eq(0)
+      bless!
+      expect(deck.cards.select { |card| card.name == 'Bless' }.count).to eq(1)
     end
 
-    describe '#cards' do
-      subject(:cards) { deck.cards }
+    it 'increases the deck size by one' do
+      original_size = deck.cards.size
+      bless!
+      expect(deck.cards.size).to eq(original_size + 1)
+    end
 
-      it 'returns the default starting set of 20 modifier cards' do
+    it 'soft shuffles the current deck' do
+      expect(deck).to receive(:shuffle!).with(soft_shuffle: true)
+      bless!
+    end
+  end
+
+  describe '#cards' do
+    subject(:cards) { deck.cards }
+    
+    it { expect(cards).to be_a(Array) }
+
+    context 'when deck has not been modified' do
+      
+      it { expect(cards).not_to be_empty }
+      it { expect(cards.size).to eq(20) }
+
+      it 'returns proper card distribution' do
         expect(cards.select { |card| card.name == 'Attack +0' }.count).to eq(6)
         expect(cards.select { |card| card.name == 'Attack +1' }.count).to eq(5)
         expect(cards.select { |card| card.name == 'Attack +2' }.count).to eq(1)
@@ -34,73 +73,24 @@ RSpec.describe Gloomhaven::Deck do
     end
   end
 
-  describe '#add!' do
-    subject(:add!) { deck.add!(card) }
-    let(:card) { Gloomhaven::Card.find('Attack +1') }
-
-    context 'when card is a valid Gloomhaven::Card object' do
-      it { expect { add! }.not_to raise_error }
-
-      it 'adds the card to the deck' do
-        expect(deck.size).to eq(20)
-        add!
-        expect(deck.size).to eq(21)
-      end
-
-      it 'returns the modified array of cards' do
-        expect(add!).to eq(deck.cards)
-      end
-    end
-
-    context 'when card is not a Gloomhaven::Card object' do
-      let(:card) { 'I AM A CARD' }
-      it { expect { add! }.to raise_error(TypeError, 'Card must be a Gloomhaven::Card' ) }
-    end
-  end
-
-  describe '#bless!' do
-    subject(:bless) { deck.bless! }
-
-    it 'adds 1 bless card to the deck' do
-      expect(deck.cards.select { |card| card.name == 'Bless' }.count).to eq(0)
-      bless
-      expect(deck.cards.select { |card| card.name == 'Bless' }.count).to eq(1)
-    end
-
-    it 'increases the deck size by one' do
-      original_size = deck.size
-      bless
-      expect(deck.size).to eq(original_size + 1)
-    end
-
-    it 'soft shuffles the current deck' do
-      expect(deck).not_to receive(:shuffle!).with(nil)
-      expect(deck).not_to receive(:shuffle!).with(true)
-      expect(deck).to receive(:shuffle!).with(false)
-      bless
-    end
-  end
-
   describe '#curse!' do
-    subject(:curse) { deck.curse! }
+    subject(:curse!) { deck.curse! }
 
     it 'adds 1 curse card to the deck' do
       expect(deck.cards.select { |card| card.name == 'Curse' }.count).to eq(0)
-      curse
+      curse!
       expect(deck.cards.select { |card| card.name == 'Curse' }.count).to eq(1)
     end
 
     it 'increases the deck size by one' do
-      original_size = deck.size
-      curse
-      expect(deck.size).to eq(original_size + 1)
+      original_size = deck.cards.size
+      curse!
+      expect(deck.cards.size).to eq(original_size + 1)
     end
 
     it 'soft shuffles the current deck' do
-      expect(deck).not_to receive(:shuffle!).with(nil)
-      expect(deck).not_to receive(:shuffle!).with(true)
-      expect(deck).to receive(:shuffle!).with(false)
-      curse
+      expect(deck).to receive(:shuffle!).with(soft_shuffle: true)
+      curse!
     end
   end
 
@@ -162,6 +152,15 @@ RSpec.describe Gloomhaven::Deck do
     end
   end
 
+  describe '#drawn_cards' do
+    context 'when deck has not been modified' do
+      subject(:drawn_cards) { deck.drawn_cards }
+
+      it { expect(drawn_cards).to be_a(Array) }
+      it { expect(drawn_cards).to be_empty }
+    end
+  end
+
   describe '#remove!' do
     subject(:remove!) { deck.remove!(card) }
 
@@ -172,9 +171,9 @@ RSpec.describe Gloomhaven::Deck do
         it { expect { remove! }.not_to raise_error }
 
         it 'removes the card from the deck' do
-          expect(deck.size).to eq(20)
+          expect(deck.cards.size).to eq(20)
           remove!
-          expect(deck.size).to eq(19)
+          expect(deck.cards.size).to eq(19)
         end
 
         it 'returns the modified array of cards' do
@@ -198,16 +197,15 @@ RSpec.describe Gloomhaven::Deck do
   end
 
   describe '#shuffle!' do
-    subject(:shuffle) { deck.shuffle!(full_shuffle) }
+    subject(:shuffle!) { deck.shuffle!(options) }
+    let(:options) { Hash.new }
 
-    context 'when full_shuffle is true' do
-      let(:full_shuffle) { true }
-
+    context 'with default options' do
       # technically this has a 1:2432902008176640000 chance of that false negativing if the 20 cards are ever shuffled back into the default order.
       # willing to take that chance in this spec...
       it 'randomizes the order of cards' do
         original_cards = deck.cards
-        shuffle
+        shuffle!
         expect(original_cards).to_not eq(deck.cards)
       end
 
@@ -215,19 +213,19 @@ RSpec.describe Gloomhaven::Deck do
         expect(deck.cards.size).to eq(20)
         deck.draw
         expect(deck.cards.size).to eq(19)
-        shuffle
+        shuffle!
         expect(deck.cards.size).to eq(20)
       end
     end
 
-    context 'when full_shuffle is false' do
-      let(:full_shuffle) { false }
+    context 'with soft shuffle option' do
+      let(:options) { { soft_shuffle: true } }
 
       it 'only shuffles the remaining cards' do
         expect(deck.cards.size).to eq(20)
         deck.draw
         expect(deck.cards.size).to eq(19)
-        shuffle
+        shuffle!
         expect(deck.cards.size).to eq(19)
       end
     end
