@@ -8,7 +8,8 @@ module Gloomhaven
 
     # returns a card object from the card name
     def self.find(name)
-      Card.new(find_id_by_name(name))
+      card_id = CARDS.select { |id, attributes| attributes['name'].downcase == name.downcase }.keys.first
+      Card.new(card_id)
     end
 
     def initialize(number)
@@ -31,11 +32,6 @@ module Gloomhaven
     end
 
     private
-
-    # returns yaml-id of the card by name
-    def self.find_id_by_name(name)
-      CARDS.select { |id, attributes| attributes['name'].downcase == name.downcase }.keys.first
-    end
 
     def validate_card_number!(number)
       raise ArgumentError.new('Number must be an integer') unless number.is_a?(Integer)

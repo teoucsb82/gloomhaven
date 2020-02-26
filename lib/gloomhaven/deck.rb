@@ -1,3 +1,5 @@
+require 'gloomhaven/card'
+
 module Gloomhaven
   class Deck
     attr_reader :cards
@@ -76,7 +78,7 @@ module Gloomhaven
     # Can override with `options = { soft_shuffle: true }`  to
     # only shuffle cards not yet drawn (useful for blesses/curses)
     def shuffle!(options = {})
-      options[:soft_shuffle] ||= false 
+      options[:soft_shuffle] ||= false
       return @cards.shuffle! if options[:soft_shuffle]
 
       @cards = (@cards + @drawn_cards).shuffle
