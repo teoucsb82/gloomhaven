@@ -145,3 +145,11 @@
   name: 'Rolling Night'
   rolling: true
   night: true
+-
+  name: 'Rolling Poison'
+  rolling: true
+  poison: true
+-
+  name: 'Rolling Invisible'
+  rolling: true
+  invisible: true

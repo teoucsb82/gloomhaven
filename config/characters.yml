@@ -25,6 +25,19 @@ tinkerer:
     add_one_plus_one_heal_plus_two_card: 2
     add_one_plus_zero_add_target_card: 1
     ignore_negative_scenario_effects: 1
+scoundrel:
+  perks:
+    remove_two_minus_one_cards: 2
+    remove_four_plus_zero_cards: 1
+    replace_one_minus_two_card_with_one_plus_zero_card: 1
+    replace_one_minus_one_card_with_one_plus_one_card: 1
+    replace_one_plus_zero_card_with_one_plus_two_card: 2
+    add_two_rolling_plus_one_cards: 2
+    add_two_rolling_pierce_three_cards: 1
+    add_two_rolling_poison_cards: 2
+    add_two_rolling_muddle_cards: 1
+    add_one_rolling_invisible_card: 1
+    ignore_negative_scenario_effects: 1
 spellweaver:
   perks:
     remove_four_plus_zero_cards: 1

@@ -223,5 +223,26 @@ add_one_rolling_sun_and_one_rolling_night_card:
       add: true
       card_name: Rolling Night
       count: 1
+add_two_rolling_poison_cards:
+  description: Add two Rolling POISON cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Poison
+      count: 2
+add_two_rolling_muddle_cards:
+  description: Add two Rolling MUDDLE cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Muddle
+      count: 2
+add_one_rolling_invisible_card:
+  description: Add two Rolling INVISIBLE cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Invisible
+      count: 1
 ignore_negative_scenario_effects:
   description: Ignore negative scenario effects
