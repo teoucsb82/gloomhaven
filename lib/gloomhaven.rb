@@ -9,4 +9,8 @@ module Gloomhaven
   CARDS = YAML.load(File.read('config/cards.yml'))
   CHARACTERS = YAML.load(File.read('config/characters.yml'))
   PERKS = YAML.load(File.read('config/perks.yml'))
+
+  def self.version
+    VERSION
+  end
 end

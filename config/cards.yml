@@ -41,3 +41,71 @@
   name: 'Bless'
   shuffle: false
   starting_count: 0
+10:
+  name: 'Attack +3'
+  attack: 3
+11:
+  name: 'Rolling Attack +1'
+  attack: 1
+  rolling: true
+12:
+  name: 'Rolling Muddle'
+  attack: 0
+  rolling: true
+  muddle: true
+13:
+  name: 'Rolling Push 1'
+  attack: 0
+  rolling: true
+  push: 1
+14:
+  name: 'Rolling Pierce 3'
+  attack: 0
+  rolling: true
+  pierce: 3
+15:
+  name: 'Rolling Stun'
+  attack: 0
+  rolling: true
+  stun: true
+16:
+  name: 'Rolling Disarm'
+  attack: 0
+  rolling: true
+  disarm: true
+17:
+  name: 'Rolling Muddle'
+  attack: 0
+  rolling: true
+  muddle: true
+18:
+  name: 'Rolling Add Target'
+  attack: 0
+  rolling: true
+  add_target: true
+19:
+  name: 'Attack +1 Shield 1'
+  attack: 1
+  shield: 1
+20:
+  name: 'Rolling Fire'
+  rolling: true
+  fire: true
+21:
+  name: 'Attack +1 Wound'
+  attack: 1
+  wound: true
+22:
+  name: 'Attack +1 Immobilize'
+  attack: 1
+  immobilize: true
+23:
+  name: 'Attack +1 Heal +2'
+  attack: 2
+  heal: 2
+24:
+  name: 'Attack +0 Add Target'
+  attack: 0
+  add_target: true
+25:
+  name: 'Ignore negative scenario effects'

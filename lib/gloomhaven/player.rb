@@ -1,3 +1,4 @@
+require 'pry'
 module Gloomhaven
   class Player
 
@@ -39,12 +40,8 @@ module Gloomhaven
     end
 
     def update_attack_modifier_deck_from!(perk)
-      perk.effects.each do |effect|
-        card_name = effect['card_name']
-        count = effect['count']
-        count.times { deck.add!(Card.find(card_name)) } if effect['add']
-        count.times { deck.remove!(Card.find(card_name)) } if effect['remove']
-      end
+      perk.cards['add'].each { |card| deck.add!(card) }
+      perk.cards['remove'].each { |card| deck.remove!(card) }
     end
 
     def validate_character_class!(character_class)

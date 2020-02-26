@@ -61,11 +61,9 @@ RSpec.describe Gloomhaven::Player do
         let(:character_class) { 'brute' }
         let(:perk) { Gloomhaven::Perk.new('remove_four_plus_zero_cards') }
 
-        it { expect { add_perk! }.to raise_error(ArgumentError, "#{character_class} cannot select #{perk.description}") }
-
-        it 'does not update the attack modifier deck' do
+        it 'raises an error and does not update the attack modifier deck' do
           expect(player).not_to receive(:update_attack_modifier_deck_from!).with(perk)
-          expect { add_perk! }.to raise_error
+          expect { add_perk! }.to raise_error(ArgumentError, "#{character_class} cannot select #{perk.description}")
         end
       end
     end
@@ -73,11 +71,9 @@ RSpec.describe Gloomhaven::Player do
     context 'when card is not a valid Gloomhaven::Perk object' do
       let(:perk) { nil }
 
-      it { expect { add_perk! }.to raise_error(TypeError, 'Perk must be a Gloomhaven::Perk') }
-
-      it 'does not update the attack modifier deck' do
-        expect(player).not_to receive(:update_attack_modifier_deck_from!).with(perk)
-        expect { add_perk! }.to raise_error
+      it 'raises an error and does not update the attack modifier deck' do
+        expect(player).not_to receive(:update_attack_modifier_deck_from!)
+        expect { add_perk! }.to raise_error(TypeError, 'Perk must be a Gloomhaven::Perk')
       end
     end
   end

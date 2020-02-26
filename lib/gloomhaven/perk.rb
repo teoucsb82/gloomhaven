@@ -11,6 +11,23 @@ module Gloomhaven
       @effects = data['effects']
     end
 
+    ##
+    # returns a hash of card objects
+    # Ex: Perk.new.carsd
+    # => { add: [Card, Card], remove: [Card, Card, Card] }
+    def cards
+      result = { 'add' => [], 'remove' => [] }
+      return result unless effects
+
+      effects.each do |effect|
+        card_name = effect['card_name']
+        count = effect['count']
+        count.times { result['add'] << Card.find(card_name) } if effect['add']
+        count.times { result['remove'] << Card.find(card_name) } if effect['remove']
+      end
+      result
+    end
+
     private
 
     def validate!(key)

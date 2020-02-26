@@ -89,7 +89,8 @@ module Gloomhaven
     def build_base_deck!
       CARDS.each do |card|
         id, attributes = card
-        attributes['starting_count'].times { cards << Card.new(id) }
+        number = attributes['starting_count'] || 0
+        number.times { cards << Card.new(id) }
       end
     end
   end

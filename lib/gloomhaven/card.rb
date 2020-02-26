@@ -1,10 +1,6 @@
 module Gloomhaven
   class Card
-    attr_reader :attack
-    attr_reader :crit
-    attr_reader :name
-    attr_reader :miss
-    attr_reader :shuffle
+    attr_reader :attack, :crit, :miss, :name, :shuffle
 
     # returns a card object from the card name
     def self.find(name)
@@ -20,6 +16,7 @@ module Gloomhaven
       @attack = data['attack']
       @crit = data['crit'] == true
       @miss = data['miss'] == true
+      @rolling = data['rolling'] == true
       @shuffle = data['shuffle'] == true
     end
 
@@ -29,6 +26,10 @@ module Gloomhaven
 
     def curse?
       name.downcase == 'curse'
+    end
+
+    def rolling?
+      @rolling
     end
 
     private
