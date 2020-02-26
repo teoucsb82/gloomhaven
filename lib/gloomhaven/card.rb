@@ -1,23 +1,20 @@
 module Gloomhaven
   class Card
+
     attr_reader :attack, :crit, :miss, :name, :shuffle
 
-    # returns a card object from the card name
-    def self.find(name)
-      card_id = CARDS.select { |id, attributes| attributes['name'].downcase == name.downcase }.keys.first
-      Card.new(card_id)
-    end
+    def initialize(name)
+      raise ArgumentError.new('Name must be a string') unless name.is_a?(String)
 
-    def initialize(number)
-      validate_card_number!(number)
+      card_data = CARDS.detect { |card| card['name'].downcase == name.downcase }
+      validate!(card_data)
 
-      data = CARDS[number]
-      @name = data['name']
-      @attack = data['attack']
-      @crit = data['crit'] == true
-      @miss = data['miss'] == true
-      @rolling = data['rolling'] == true
-      @shuffle = data['shuffle'] == true
+      @name = card_data['name']
+      @attack = card_data['attack']
+      @crit = card_data['crit'] == true
+      @miss = card_data['miss'] == true
+      @rolling = card_data['rolling'] == true
+      @shuffle = card_data['shuffle'] == true
     end
 
     def bless?
@@ -34,9 +31,8 @@ module Gloomhaven
 
     private
 
-    def validate_card_number!(number)
-      raise ArgumentError.new('Number must be an integer') unless number.is_a?(Integer)
-      raise ArgumentError.new('Number is not supported') unless Gloomhaven::CARDS.keys.include?(number)
+    def validate!(data)
+      raise CardNotFoundError.new unless data
     end
   end
 end

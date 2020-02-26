@@ -22,8 +22,8 @@ module Gloomhaven
       effects.each do |effect|
         card_name = effect['card_name']
         count = effect['count']
-        count.times { result['add'] << Card.find(card_name) } if effect['add']
-        count.times { result['remove'] << Card.find(card_name) } if effect['remove']
+        count.times { result['add'] << Card.new(card_name) } if effect['add']
+        count.times { result['remove'] << Card.new(card_name) } if effect['remove']
       end
       result
     end

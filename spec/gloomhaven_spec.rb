@@ -9,7 +9,7 @@ RSpec.describe Gloomhaven do
 
   describe '::CARDS' do
     it { expect(Gloomhaven::CARDS).not_to be nil }
-    it { expect(Gloomhaven::CARDS).to be_a(Hash) }
+    it { expect(Gloomhaven::CARDS).to be_a(Array) }
     it { expect(Gloomhaven::CARDS.length).to be > 0 }
   end
 end

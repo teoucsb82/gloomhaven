@@ -4,7 +4,7 @@ RSpec.describe Gloomhaven::Deck do
 
   describe '#add!' do
     subject(:add!) { deck.add!(card) }
-    let(:card) { Gloomhaven::Card.find('Attack +1') }
+    let(:card) { Gloomhaven::Card.new('Attack +1') }
 
     context 'when card is a valid Gloomhaven::Card object' do
       it 'adds the card to the deck' do
@@ -47,11 +47,11 @@ RSpec.describe Gloomhaven::Deck do
 
   describe '#cards' do
     subject(:cards) { deck.cards }
-    
+
     it { expect(cards).to be_a(Array) }
 
     context 'when deck has not been modified' do
-      
+
       it { expect(cards).not_to be_empty }
       it { expect(cards.size).to eq(20) }
 
@@ -116,7 +116,7 @@ RSpec.describe Gloomhaven::Deck do
     end
 
     context 'when drawn card is blessing' do
-      let(:bless_card) { Gloomhaven::Card.find('Bless') }
+      let(:bless_card) { Gloomhaven::Card.new('Bless') }
 
       before do
         # put a "bless" card on top of the deck
@@ -134,7 +134,7 @@ RSpec.describe Gloomhaven::Deck do
     end
 
     context 'when drawn card is curse' do
-      let(:curse_card) { Gloomhaven::Card.find('Curse') }
+      let(:curse_card) { Gloomhaven::Card.new('Curse') }
 
       before do
         # put a "curse" card on top of the deck
@@ -166,7 +166,7 @@ RSpec.describe Gloomhaven::Deck do
 
     context 'when card is a Gloomhaven::Card object' do
       context 'when the card to remove exists in the deck' do
-        let(:card) { Gloomhaven::Card.find('Attack +0') } # default deck contains an attack +0 card
+        let(:card) { Gloomhaven::Card.new('Attack +0') } # default deck contains an attack +0 card
 
         it { expect { remove! }.not_to raise_error }
 
@@ -182,8 +182,8 @@ RSpec.describe Gloomhaven::Deck do
       end
 
       context 'when the card to remove does not exist in the deck' do
-        let(:bless_card) { Gloomhaven::Card.find('Bless') } # default deck does not contain bless
-        let(:curse_card) { Gloomhaven::Card.find('Curse') } # default deck does not contain curse
+        let(:bless_card) { Gloomhaven::Card.new('Bless') } # default deck does not contain bless
+        let(:curse_card) { Gloomhaven::Card.new('Curse') } # default deck does not contain curse
 
         it { expect { deck.remove!(bless_card) }.to raise_error(ArgumentError, "Card: 'Bless' not found in deck") }
         it { expect { deck.remove!(curse_card) }.to raise_error(ArgumentError, "Card: 'Curse' not found in deck") }

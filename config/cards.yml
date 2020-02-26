@@ -1,147 +1,147 @@
 ---
-1:
+-
   name: 'Attack +0'
   attack: 0
   starting_count: 6
-2:
+-
   name: 'Attack +1'
   attack: 1
   starting_count: 5
-3:
+-
   name: 'Attack -1'
   attack: -1
   starting_count: 5
-4:
+-
   name: 'Attack +2'
   attack: 2
   starting_count: 1
-5:
+-
   name: 'Attack -2'
   attack: -2
   starting_count: 1
-6: &crit_miss
+- &crit_miss
   name: 'Null'
   attack: 0
   starting_count: 1
   shuffle: true
   miss: true
-7: &crit_hit
+- &crit_hit
   name: '2x'
   attack: 0
   starting_count: 1
   shuffle: true
   crit: true
-8:
+-
   <<: *crit_miss
   name: 'Curse'
   shuffle: false
   starting_count: 0
-9:
+-
   <<: *crit_hit
   name: 'Bless'
   shuffle: false
   starting_count: 0
-10:
+-
   name: 'Attack +3'
   attack: 3
-11:
+-
   name: 'Rolling Attack +1'
   attack: 1
   rolling: true
-12:
+-
   name: 'Rolling Muddle'
   attack: 0
   rolling: true
   muddle: true
-13:
+-
   name: 'Rolling Push 1'
   attack: 0
   rolling: true
   push: 1
-14:
+-
   name: 'Rolling Pierce 3'
   attack: 0
   rolling: true
   pierce: 3
-15:
+-
   name: 'Rolling Stun'
   attack: 0
   rolling: true
   stun: true
-16:
+-
   name: 'Rolling Disarm'
   attack: 0
   rolling: true
   disarm: true
-17:
+-
   name: 'Rolling Muddle'
   attack: 0
   rolling: true
   muddle: true
-18:
+-
   name: 'Rolling Add Target'
   attack: 0
   rolling: true
   add_target: true
-19:
+-
   name: 'Attack +1 Shield 1'
   attack: 1
   shield: 1
-21:
+-
   name: 'Attack +1 Wound'
   attack: 1
   wound: true
-22:
+-
   name: 'Attack +1 Immobilize'
   attack: 1
   immobilize: true
-23:
+-
   name: 'Attack +1 Heal +2'
   attack: 2
   heal: 2
-24:
+-
   name: 'Attack +0 Add Target'
   attack: 0
   add_target: true
-25:
+-
   name: 'Ignore negative scenario effects'
-26:
+-
   name: 'Attack +0 Stun'
   attack: 0
   stun: true
-27:
+-
   name: 'Attack +0 Curse'
   attack: 0
   curse: true
-28:
+-
   name: 'Attack +2 Fire'
   attack: 2
   fire: true
-29:
+-
   name: 'Attack +2 Ice'
   attack: 2
   ice: true
-20:
+-
   name: 'Rolling Fire'
   rolling: true
   fire: true
-30:
+-
   name: 'Rolling Nature'
   rolling: true
   nature: true
-31:
+-
   name: 'Rolling Wind'
   rolling: true
   wind: true
-32:
+-
   name: 'Rolling Ice'
   rolling: true
   ice: true
-33:
+-
   name: 'Rolling Sun'
   rolling: true
   sun: true
-34:
+-
   name: 'Rolling Night'
   rolling: true
   night: true

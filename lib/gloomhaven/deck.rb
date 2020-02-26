@@ -17,7 +17,7 @@ module Gloomhaven
     # Ex:
     #
     # deck = Deck.new
-    # card = Card.find('Attack +3')
+    # card = Card.new('Attack +3')
     # deck.add!(card)
     def add!(card)
       raise TypeError.new('Card must be a Gloomhaven::Card') unless card.is_a?(Gloomhaven::Card)
@@ -29,14 +29,14 @@ module Gloomhaven
     ##
     # Adds a bless card to the current deck, then soft shuffles
     def bless!
-      @cards << Card.find('Bless')
+      @cards << Card.new('Bless')
       shuffle!(soft_shuffle: true)
     end
 
     ##
     # Adds a curse card to the current deck, then soft shuffles
     def curse!
-      @cards << Card.find('Curse')
+      @cards << Card.new('Curse')
       shuffle!(soft_shuffle: true)
     end
 
@@ -57,7 +57,7 @@ module Gloomhaven
     # Ex:
     #
     # deck = Deck.new
-    # card = Card.find('Attack -1')
+    # card = Card.new('Attack -1')
     # deck.remove!(card)
     def remove!(card)
       raise TypeError.new('Card must be a Gloomhaven::Card') unless card.is_a?(Gloomhaven::Card)
@@ -88,9 +88,8 @@ module Gloomhaven
 
     def build_base_deck!
       CARDS.each do |card|
-        id, attributes = card
-        number = attributes['starting_count'] || 0
-        number.times { cards << Card.new(id) }
+        number = card['starting_count'] || 0
+        number.times { cards << Card.new(card['name']) }
       end
     end
   end
