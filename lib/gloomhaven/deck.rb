@@ -1,5 +1,3 @@
-require 'gloomhaven/card'
-
 module Gloomhaven
   class Deck
     attr_reader :cards

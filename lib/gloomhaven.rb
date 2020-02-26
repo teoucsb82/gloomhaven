@@ -1,5 +1,6 @@
 require 'yaml'
 require 'gloomhaven/version'
+require 'gloomhaven/card'
 require 'gloomhaven/deck'
 require 'gloomhaven/player'
 require 'gloomhaven/perk'
