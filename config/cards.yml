@@ -87,10 +87,6 @@
   name: 'Attack +1 Shield 1'
   attack: 1
   shield: 1
-20:
-  name: 'Rolling Fire'
-  rolling: true
-  fire: true
 21:
   name: 'Attack +1 Wound'
   attack: 1
@@ -109,3 +105,43 @@
   add_target: true
 25:
   name: 'Ignore negative scenario effects'
+26:
+  name: 'Attack +0 Stun'
+  attack: 0
+  stun: true
+27:
+  name: 'Attack +0 Curse'
+  attack: 0
+  curse: true
+28:
+  name: 'Attack +2 Fire'
+  attack: 2
+  fire: true
+29:
+  name: 'Attack +2 Ice'
+  attack: 2
+  ice: true
+20:
+  name: 'Rolling Fire'
+  rolling: true
+  fire: true
+30:
+  name: 'Rolling Nature'
+  rolling: true
+  nature: true
+31:
+  name: 'Rolling Wind'
+  rolling: true
+  wind: true
+32:
+  name: 'Rolling Ice'
+  rolling: true
+  ice: true
+33:
+  name: 'Rolling Sun'
+  rolling: true
+  sun: true
+34:
+  name: 'Rolling Night'
+  rolling: true
+  night: true

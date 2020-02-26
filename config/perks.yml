@@ -173,5 +173,55 @@ add_one_plus_zero_add_target_card:
       add: true
       card_name: Attack +0 Add Target
       count: 1
+add_one_plus_zero_stun_card:
+  description: Add one +0 STUN card
+  effects:
+    -
+      add: true
+      card_name: Attack +0 Stun
+      count: 1
+add_one_plus_one_curse_card:
+  description: Add one +0 CURSE card
+  effects:
+    -
+      add: true
+      card_name: Attack +0 Curse
+      count: 1
+add_one_plus_two_fire_card:
+  description: Add one +2 Fire Card
+  effects:
+    -
+      add: true
+      card_name: Attack +2 Fire
+      count: 1
+add_one_plus_two_ice_card:
+  description: Add one +2 Ice Card
+  effects:
+    -
+      add: true
+      card_name: Attack +2 Ice
+      count: 1
+add_one_rolling_nature_and_one_rolling_wind_card:
+  description: Add one Rolling Nature and one Rolling Wind card
+  effects:
+    -
+      add: true
+      card_name: Rolling Nature
+      count: 1
+    -
+      add: true
+      card_name: Rolling Wind
+      count: 1
+add_one_rolling_sun_and_one_rolling_night_card:
+  description: Add one Rolling Sun and one Rolling Night card
+  effects:
+    -
+      add: true
+      card_name: Rolling Sun
+      count: 1
+    -
+      add: true
+      card_name: Rolling Night
+      count: 1
 ignore_negative_scenario_effects:
   description: Ignore negative scenario effects

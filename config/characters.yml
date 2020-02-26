@@ -25,3 +25,16 @@ tinkerer:
     add_one_plus_one_heal_plus_two_card: 2
     add_one_plus_zero_add_target_card: 1
     ignore_negative_scenario_effects: 1
+spellweaver:
+  perks:
+    remove_four_plus_zero_cards: 1
+    replace_one_minus_one_card_with_one_plus_one_card: 2
+    add_two_plus_one_cards: 2
+    add_one_plus_zero_stun_card: 1
+    add_one_plus_one_wound_card: 1
+    add_one_plus_one_immobilize_card: 1
+    add_one_plus_one_curse_card: 1
+    add_one_plus_two_fire_card: 2
+    add_one_plus_two_ice_card: 2
+    add_one_rolling_nature_and_one_rolling_wind_card: 1
+    add_one_rolling_sun_and_one_rolling_night_card: 1
