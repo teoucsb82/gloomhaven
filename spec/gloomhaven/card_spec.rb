@@ -21,12 +21,14 @@ RSpec.describe Gloomhaven::Card do
       context 'when card is an actual crit' do
         let(:name) { '2x' }
         it { expect(card.crit).to eq(true) }
+        it { expect(card.bless?).to eq(false) }
         it { expect(card.shuffle).to eq(true) }
       end
 
       context 'when card is a blessing crit' do
         let(:name) { 'Bless' }
         it { expect(card.crit).to eq(true) }
+        it { expect(card.bless?).to eq(true) }
         it { expect(card.shuffle).to eq(false) }
       end
     end
@@ -35,12 +37,14 @@ RSpec.describe Gloomhaven::Card do
       context 'when card is an actual miss' do
         let(:name) { 'Null' }
         it { expect(card.miss).to eq(true) }
+        it { expect(card.curse?).to eq(false) }
         it { expect(card.shuffle).to eq(true) }
       end
 
       context 'when card is a blessing miss' do
         let(:name) { 'Curse' }
         it { expect(card.miss).to eq(true) }
+        it { expect(card.curse?).to eq(true) }
         it { expect(card.shuffle).to eq(false) }
       end
     end
@@ -49,6 +53,11 @@ RSpec.describe Gloomhaven::Card do
       let(:name) { 'Attack +0' }
       it { expect(card.crit).to eq(false) }
       it { expect(card.miss).to eq(false) }
+    end
+
+    context 'when card is rolling' do
+      let(:name) { 'Rolling Fire' }
+      it { expect(card.rolling?).to eq(true) }
     end
 
     context 'when card name does not exist in the cards.yml' do
