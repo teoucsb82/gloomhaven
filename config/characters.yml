@@ -94,6 +94,16 @@ spellweaver:
     add_one_rolling_light_and_one_rolling_dark_card: 1
 summoner:
   perks:
+    remove_two_minus_one_cards: 1
+    replace_one_minus_two_card_with_one_plus_zero_card: 1
+    replace_one_minus_one_card_with_one_plus_one_card: 3
+    add_one_plus_two_card: 2
+    add_two_rolling_wound_cards: 1
+    add_two_rolling_poison_cards: 1
+    add_two_rolling_heal_plus_one_cards: 3
+    add_one_rolling_fire_and_one_rolling_wind_card: 1
+    add_one_rolling_dark_and_one_rolling_earth_card: 1
+    ignore_negative_scenario_effects_and_add_two_plus_one_cards: 1
 sunkeeper:
   perks:
     remove_two_minus_one_cards: 2
