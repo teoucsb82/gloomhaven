@@ -158,6 +158,10 @@
   rolling: true
   wound: true
 -
+  name: 'Rolling Curse'
+  rolling: true
+  curse: true
+-
   name: 'Attack +2 Muddle'
   attack: 2
   muddle: true
@@ -185,3 +189,15 @@
   name: 'Attack +0 Refresh item'
   attack: 0
   refresh_item: true
+-
+  name: 'Attack -1 Dark'
+  attack: -1
+  dark: true
+-
+  name: 'Attack +1 Dark'
+  attack: 1
+  dark: true
+-
+  name: 'Attack +1 Invisible'
+  attack: 1
+  invisible: true
