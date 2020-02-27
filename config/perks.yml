@@ -418,6 +418,24 @@ add_three_rolling_poison_cards:
       add: true
       card_name: Rolling Poison
       count: 3
+replace_one_plus_zero_card_with_one_rolling_plus_two_card:
+  description: Replace one +0 card with one Rolling +2 card
+  effects:
+    -
+      remove: true
+      card_name: Attack +0
+      count: 1
+    -
+      add: true
+      card_name: Rolling Attack +2
+      count: 1
+add_one_rolling_plus_one_disarm_card:
+  description: Add one Rolling +1 DISARM card
+  effects:
+    -
+      add: true
+      card_name: Rolling Attack +1 Disarm
+      count: 1
 ignore_negative_item_effects_and_add_two_plus_one_cards:
   description: Ignore negative item effects and add two +1 cards
   effects:

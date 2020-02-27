@@ -3,6 +3,16 @@ beast_tyrant:
   perks:
 berserker:
   perks:
+    remove_two_minus_one_cards: 1
+    remove_four_plus_zero_cards: 1
+    replace_one_minus_one_card_with_one_plus_one_card: 2
+    replace_one_plus_zero_card_with_one_rolling_plus_two_card: 2
+    add_two_rolling_wound_cards: 2
+    add_one_rolling_stun_card: 2
+    add_one_rolling_plus_one_disarm_card: 1
+    add_two_rolling_heal_plus_one_cards: 1
+    add_one_plus_two_fire_card: 2
+    ignore_negative_item_effects: 1
 brute:
   perks:
     remove_two_minus_one_cards: 1

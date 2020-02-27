@@ -205,3 +205,12 @@
   name: 'Attack +1 Air'
   attack: 1
   air: true
+-
+  name: 'Rolling Attack +2'
+  attack: 2
+  rolling: true
+-
+  name: 'Rolling Attack +1 Disarm'
+  attack: 1
+  rolling: true
+  disarm: true
