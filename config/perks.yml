@@ -244,5 +244,46 @@ add_one_rolling_invisible_card:
       add: true
       card_name: Rolling Invisible
       count: 1
+add_one_minus_two_card_and_two_plus_two_cards:
+  description: Add one -2 card and two +2 cards
+  effects:
+    -
+      add: true
+      card_name: Attack -2
+      count: 1
+    -
+      add: true
+      card_name: Attack +2
+      count: 2
+add_one_plus_two_muddle_card:
+  description: Add one +2 MUDDLE card
+  effects:
+    -
+      add: true
+      card_name: Attack +2 Muddle
+      count: 1
+add_two_rolling_push_two_cards:
+  description: Add two Rolling PUSH 2 cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Push 2
+      count: 2
+add_two_rolling_nature_cards:
+  description: Add two Rolling Nature Cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Nature
+      count: 2
+add_two_rolling_wind_cards:
+  description: Add two Rolling Wind Cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Wind
+      count: 2
 ignore_negative_scenario_effects:
   description: Ignore negative scenario effects
+ignore_negative_item_effects:
+  description: Ignore negative item effects

@@ -12,6 +12,18 @@ brute:
     add_one_rolling_add_target_card: 2
     add_one_plus_one_shield_one_self_card: 1
     ignore_negative_item_effects_and_add_one_plus_one_card: 1
+cragheart:
+  perks:
+    remove_four_plus_zero_cards: 1
+    replace_one_minus_one_card_with_one_plus_one_card: 3
+    add_one_minus_two_card_and_two_plus_two_cards: 1
+    add_one_plus_one_immobilize_card: 2
+    add_one_plus_two_muddle_card: 2
+    add_two_rolling_push_two_cards: 1
+    add_two_rolling_nature_cards: 2
+    add_two_rolling_wind_cards: 1
+    ignore_negative_item_effects: 1
+    ignore_negative_scenario_effects: 1
 tinkerer:
   perks:
     remove_two_minus_one_cards: 2

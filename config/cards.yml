@@ -153,3 +153,11 @@
   name: 'Rolling Invisible'
   rolling: true
   invisible: true
+-
+  name: 'Attack +2 Muddle'
+  attack: 2
+  muddle: true
+-
+  name: 'Rolling Push 2'
+  rolling: true
+  push: 2
