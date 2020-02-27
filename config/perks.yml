@@ -208,8 +208,8 @@ add_one_plus_two_ice_card:
       add: true
       card_name: Attack +2 Ice
       count: 1
-add_one_rolling_nature_and_one_rolling_wind_card:
-  description: Add one Rolling Nature and one Rolling Wind card
+add_one_rolling_nature_and_one_rolling_air_card:
+  description: Add one Rolling Nature and one Rolling Air card
   effects:
     -
       add: true
@@ -217,7 +217,7 @@ add_one_rolling_nature_and_one_rolling_wind_card:
       count: 1
     -
       add: true
-      card_name: Rolling Wind
+      card_name: Rolling Air
       count: 1
 add_one_rolling_light_and_one_rolling_dark_card:
   description: Add one Rolling Light and one Rolling Dark card
@@ -283,12 +283,12 @@ add_two_rolling_nature_cards:
       add: true
       card_name: Rolling Nature
       count: 2
-add_two_rolling_wind_cards:
-  description: Add two Rolling Wind Cards
+add_two_rolling_air_cards:
+  description: Add two Rolling Air Cards
   effects:
     -
       add: true
-      card_name: Rolling Wind
+      card_name: Rolling Air
       count: 2
 replace_two_plus_one_cards_with_two_plus_two_cards:
   description: Replace two +1 cards with two +2 cards
@@ -350,8 +350,8 @@ add_two_rolling_wound_cards:
       add: true
       card_name: Rolling Wound
       count: 2
-add_one_rolling_fire_and_one_rolling_wind_card:
-  description: Add one Rolling Fire and one Rolling Wind card
+add_one_rolling_fire_and_one_rolling_air_card:
+  description: Add one Rolling Fire and one Rolling Air card
   effects:
     -
       add: true
@@ -359,7 +359,7 @@ add_one_rolling_fire_and_one_rolling_wind_card:
       count: 1
     -
       add: true
-      card_name: Rolling Wind
+      card_name: Rolling Air
       count: 1
 add_one_rolling_dark_and_one_rolling_nature_card:
   description: Add one Rolling Dark and one Rolling Nature card
@@ -404,12 +404,12 @@ add_two_rolling_curse_cards:
       add: true
       card_name: Rolling Curse
       count: 2
-add_one_plus_one_wind_card:
-  description: Add one +1 Wind card
+add_one_plus_one_air_card:
+  description: Add one +1 Air card
   effects:
     -
       add: true
-      card_name: Attack +1 Wind
+      card_name: Attack +1 Air
       count: 1
 add_three_rolling_poison_cards:
   description: Add three Rolling POISON cards

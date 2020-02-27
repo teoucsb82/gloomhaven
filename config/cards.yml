@@ -130,9 +130,9 @@
   rolling: true
   nature: true
 -
-  name: 'Rolling Wind'
+  name: 'Rolling Air'
   rolling: true
-  wind: true
+  air: true
 -
   name: 'Rolling Ice'
   rolling: true
@@ -202,6 +202,6 @@
   attack: 1
   invisible: true
 -
-  name: 'Attack +1 Wind'
+  name: 'Attack +1 Air'
   attack: 1
-  wind: true
+  air: true

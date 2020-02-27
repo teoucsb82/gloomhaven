@@ -25,7 +25,7 @@ cragheart:
     add_one_plus_two_muddle_card: 2
     add_two_rolling_push_two_cards: 1
     add_two_rolling_nature_cards: 2
-    add_two_rolling_wind_cards: 1
+    add_two_rolling_air_cards: 1
     ignore_negative_item_effects: 1
     ignore_negative_scenario_effects: 1
 doomstalker:
@@ -64,7 +64,7 @@ plagueherald:
     replace_one_minus_one_card_with_one_plus_one_card: 2
     replace_one_plus_zero_card_with_one_plus_two_card: 2
     add_two_plus_one_cards: 1
-    add_one_plus_one_wind_card: 3
+    add_one_plus_one_air_card: 3
     add_three_rolling_poison_cards: 1
     add_two_rolling_curse_cards: 1
     add_two_rolling_immobilize_cards: 1
@@ -111,7 +111,7 @@ spellweaver:
     add_one_plus_one_curse_card: 1
     add_one_plus_two_fire_card: 2
     add_one_plus_two_ice_card: 2
-    add_one_rolling_nature_and_one_rolling_wind_card: 1
+    add_one_rolling_nature_and_one_rolling_air_card: 1
     add_one_rolling_light_and_one_rolling_dark_card: 1
 summoner:
   perks:
@@ -122,7 +122,7 @@ summoner:
     add_two_rolling_wound_cards: 1
     add_two_rolling_poison_cards: 1
     add_two_rolling_heal_plus_one_cards: 3
-    add_one_rolling_fire_and_one_rolling_wind_card: 1
+    add_one_rolling_fire_and_one_rolling_air_card: 1
     add_one_rolling_dark_and_one_rolling_nature_card: 1
     ignore_negative_scenario_effects_and_add_two_plus_one_cards: 1
 sunkeeper:
