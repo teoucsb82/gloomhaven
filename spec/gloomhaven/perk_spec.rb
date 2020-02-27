@@ -14,6 +14,7 @@ RSpec.describe Gloomhaven::Perk do
 
   context 'character specific perks' do
     Gloomhaven::CHARACTERS.each do |character_class, data|
+      next if data['perks'].nil?
       data['perks'].each do |perk, count|
         it "#{character_class.capitalize}: Perk #{perk} exists" do
           expect { Gloomhaven::Perk.new(perk) }.not_to raise_error

@@ -19,16 +19,23 @@ RSpec.describe Gloomhaven do
     it { expect(characters).not_to be nil }
     it { expect(characters).to be_a(Hash) }
     it { expect(characters.length).to eq(17) }
-
-    it 'maps all character classes' do
-      expect(characters.keys).to include('brute')
-      expect(characters.keys).to include('cragheart')
-      expect(characters.keys).to include('mindthief')
-      expect(characters.keys).to include('tinkerer')
-      expect(characters.keys).to include('scoundrel')
-      expect(characters.keys).to include('spellweaver')
-      expect(characters.keys).to include('sunkeeper')
-    end
+    it { expect(characters.keys).to include('beast_tyrant') }
+    it { expect(characters.keys).to include('berserker') }
+    it { expect(characters.keys).to include('brute') }
+    it { expect(characters.keys).to include('cragheart') }
+    it { expect(characters.keys).to include('doomstalker') }
+    it { expect(characters.keys).to include('elementalist') }
+    it { expect(characters.keys).to include('mindthief') }
+    it { expect(characters.keys).to include('nightshroud') }
+    it { expect(characters.keys).to include('plagueherald') }
+    it { expect(characters.keys).to include('quartermaster') }
+    it { expect(characters.keys).to include('sawbones') }
+    it { expect(characters.keys).to include('scoundrel') }
+    it { expect(characters.keys).to include('soothsinger') }
+    it { expect(characters.keys).to include('spellweaver') }
+    it { expect(characters.keys).to include('summoner') }
+    it { expect(characters.keys).to include('sunkeeper') }
+    it { expect(characters.keys).to include('tinkerer') }
   end
 
   describe '::PERKS' do

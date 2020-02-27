@@ -329,6 +329,13 @@ add_two_rolling_shield_1_self_cards:
       add: true
       card_name: Rolling Shield 1, self
       count: 2
+add_one_plus_zero_refresh_an_item_card:
+  description: Add one +0 Refresh an item card
+  effects:
+    -
+      add: true
+      card_name: Attack +0 Refresh item
+      count: 1
 ignore_negative_item_effects_and_add_two_plus_one_cards:
   description: Ignore negative item effects and add two +1 cards
   effects:

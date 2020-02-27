@@ -177,3 +177,7 @@
   name: 'Rolling Shield 1, self'
   rolling: true
   shield: 1
+- 
+  name: 'Attack +0 Refresh item'
+  attack: 0
+  refresh_item: true

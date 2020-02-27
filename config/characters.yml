@@ -1,4 +1,8 @@
 ---
+beast_tyrant:
+  perks:
+berserker:
+  perks:
 brute:
   perks:
     remove_two_minus_one_cards: 1
@@ -24,6 +28,10 @@ cragheart:
     add_two_rolling_wind_cards: 1
     ignore_negative_item_effects: 1
     ignore_negative_scenario_effects: 1
+doomstalker:
+  perks:
+elementalist:
+  perks:
 mindthief:
   perks:
     remove_two_minus_one_cards: 2
@@ -38,20 +46,24 @@ mindthief:
     add_one_rolling_stun_card: 1
     add_one_rolling_disarm_card_and_one_rolling_muddle_card: 1
     ignore_negative_scenario_effects: 1
-
-tinkerer:
+nightshroud:
+  perks:
+plagueherald:
+  perks:
+quartermaster:
   perks:
     remove_two_minus_one_cards: 2
-    replace_one_minus_two_card_with_one_plus_zero_card: 1
-    add_two_plus_one_cards: 1
-    add_one_plus_three_card: 1
-    add_two_rolling_fire_cards: 1
+    remove_four_plus_zero_cards: 1
+    replace_one_plus_zero_card_with_one_plus_two_card: 2
+    add_two_rolling_plus_one_cards: 2
     add_three_rolling_muddle_cards: 1
-    add_one_plus_one_wound_card: 2
-    add_one_plus_one_immobilize_card: 2
-    add_one_plus_one_heal_plus_two_card: 2
-    add_one_plus_zero_add_target_card: 1
-    ignore_negative_scenario_effects: 1
+    add_two_rolling_pierce_three_cards: 1
+    add_one_rolling_stun_card: 1
+    add_one_rolling_add_target_card: 1
+    add_one_plus_zero_refresh_an_item_card: 3
+    ignore_negative_item_effects_and_add_two_plus_one_cards: 1
+sawbones:
+  perks:
 scoundrel:
   perks:
     remove_two_minus_one_cards: 2
@@ -65,6 +77,8 @@ scoundrel:
     add_two_rolling_muddle_cards: 1
     add_one_rolling_invisible_card: 1
     ignore_negative_scenario_effects: 1
+soothsinger:
+  perks:
 spellweaver:
   perks:
     remove_four_plus_zero_cards: 1
@@ -78,6 +92,8 @@ spellweaver:
     add_one_plus_two_ice_card: 2
     add_one_rolling_nature_and_one_rolling_wind_card: 1
     add_one_rolling_light_and_one_rolling_dark_card: 1
+summoner:
+  perks:
 sunkeeper:
   perks:
     remove_two_minus_one_cards: 2
@@ -90,4 +106,17 @@ sunkeeper:
     add_two_rolling_light_cards: 2
     add_two_rolling_shield_1_self_cards: 1
     ignore_negative_item_effects_and_add_two_plus_one_cards: 1
+    ignore_negative_scenario_effects: 1
+tinkerer:
+  perks:
+    remove_two_minus_one_cards: 2
+    replace_one_minus_two_card_with_one_plus_zero_card: 1
+    add_two_plus_one_cards: 1
+    add_one_plus_three_card: 1
+    add_two_rolling_fire_cards: 1
+    add_three_rolling_muddle_cards: 1
+    add_one_plus_one_wound_card: 2
+    add_one_plus_one_immobilize_card: 2
+    add_one_plus_one_heal_plus_two_card: 2
+    add_one_plus_zero_add_target_card: 1
     ignore_negative_scenario_effects: 1
