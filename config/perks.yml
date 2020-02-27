@@ -283,6 +283,31 @@ add_two_rolling_wind_cards:
       add: true
       card_name: Rolling Wind
       count: 2
+replace_two_plus_one_cards_with_two_plus_two_cards:
+  description: Replace two +1 cards with two +2 cards
+  effects:
+    -
+      remove: true
+      card_name: Attack +1
+      count: 2
+    -
+      add: true
+      card_name: Attack +2
+      count: 2
+add_three_rolling_pull_one_cards:
+  description: Add three rolling PULL 1 cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Pull 1
+      count: 3
+add_two_rolling_immobilize_cards:
+  description: Add two rolling IMMOBILIZE cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Immobilize
+      count: 2
 ignore_negative_scenario_effects:
   description: Ignore negative scenario effects
 ignore_negative_item_effects:

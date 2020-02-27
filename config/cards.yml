@@ -161,3 +161,11 @@
   name: 'Rolling Push 2'
   rolling: true
   push: 2
+-
+  name: 'Rolling Pull 1'
+  rolling: true
+  pull: 1
+-
+  name: 'Rolling Immobilize'
+  rolling: true
+  immobilize: true

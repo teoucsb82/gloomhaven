@@ -24,6 +24,21 @@ cragheart:
     add_two_rolling_wind_cards: 1
     ignore_negative_item_effects: 1
     ignore_negative_scenario_effects: 1
+mindthief:
+  perks:
+    remove_two_minus_one_cards: 2
+    remove_four_plus_zero_cards: 1
+    replace_two_plus_one_cards_with_two_plus_two_cards: 1
+    replace_one_minus_two_card_with_one_plus_zero_card: 1
+    add_one_plus_two_ice_card: 2
+    add_two_rolling_plus_one_cards: 2
+    add_three_rolling_pull_one_cards: 1
+    add_three_rolling_muddle_cards: 1
+    add_two_rolling_immobilize_cards: 1
+    add_one_rolling_stun_card: 1
+    add_one_rolling_disarm_card_and_one_rolling_muddle_card: 1
+    ignore_negative_scenario_effects: 1
+
 tinkerer:
   perks:
     remove_two_minus_one_cards: 2
