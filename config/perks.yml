@@ -20,6 +20,13 @@ add_two_plus_one_cards:
       add: true
       card_name: Attack +1
       count: 2
+add_one_plus_two_card:
+  description: Add one +2 card
+  effects:
+    -
+      add: true
+      card_name: Attack +2
+      count: 1
 add_one_plus_three_card:
   description: Add one +3 card
   effects:
@@ -336,8 +343,44 @@ add_one_plus_zero_refresh_an_item_card:
       add: true
       card_name: Attack +0 Refresh item
       count: 1
+add_two_rolling_wound_cards:
+  description: Add two Rolling WOUND cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Wound
+      count: 2
+add_one_rolling_fire_and_one_rolling_wind_card:
+  description: Add one Rolling Fire and one Rolling Wind card
+  effects:
+    -
+      add: true
+      card_name: Rolling Fire
+      count: 1
+    -
+      add: true
+      card_name: Rolling Wind
+      count: 1
+add_one_rolling_dark_and_one_rolling_nature_card:
+  description: Add one Rolling Dark and one Rolling Nature card
+  effects:
+    -
+      add: true
+      card_name: Rolling Dark
+      count: 1
+    -
+      add: true
+      card_name: Rolling Nature
+      count: 1
 ignore_negative_item_effects_and_add_two_plus_one_cards:
   description: Ignore negative item effects and add two +1 cards
+  effects:
+    -
+      add: true
+      card_name: Attack +1
+      count: 2
+ignore_negative_scenario_effects_and_add_two_plus_one_cards:
+  description: Ignore scenario item effects and add two +1 cards
   effects:
     -
       add: true

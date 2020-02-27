@@ -154,6 +154,10 @@
   rolling: true
   invisible: true
 -
+  name: 'Rolling Wound'
+  rolling: true
+  wound: true
+-
   name: 'Attack +2 Muddle'
   attack: 2
   muddle: true

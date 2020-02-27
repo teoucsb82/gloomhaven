@@ -102,7 +102,7 @@ summoner:
     add_two_rolling_poison_cards: 1
     add_two_rolling_heal_plus_one_cards: 3
     add_one_rolling_fire_and_one_rolling_wind_card: 1
-    add_one_rolling_dark_and_one_rolling_earth_card: 1
+    add_one_rolling_dark_and_one_rolling_nature_card: 1
     ignore_negative_scenario_effects_and_add_two_plus_one_cards: 1
 sunkeeper:
   perks:
