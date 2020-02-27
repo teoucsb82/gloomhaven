@@ -382,7 +382,7 @@ add_one_minus_one_dark_card:
 replace_one_minus_one_dark_card_with_one_plus_one_dark_card:
   description: Replace one -1 Dark card with one +1 Dark card
   effects:
-    - 
+    -
       remove: true
       card_name: Attack -1 Dark
       count: 1
@@ -393,7 +393,7 @@ replace_one_minus_one_dark_card_with_one_plus_one_dark_card:
 add_one_plus_one_invisible_card:
   description: Add one +1 INVISIBLE card
   effects:
-    - 
+    -
       add: true
       card_name: Attack +1 Invisible
       count: 1
@@ -404,6 +404,20 @@ add_two_rolling_curse_cards:
       add: true
       card_name: Rolling Curse
       count: 2
+add_one_plus_one_wind_card:
+  description: Add one +1 Wind card
+  effects:
+    -
+      add: true
+      card_name: Attack +1 Wind
+      count: 1
+add_three_rolling_poison_cards:
+  description: Add three Rolling POISON cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Poison
+      count: 3
 ignore_negative_item_effects_and_add_two_plus_one_cards:
   description: Ignore negative item effects and add two +1 cards
   effects:
@@ -411,6 +425,13 @@ ignore_negative_item_effects_and_add_two_plus_one_cards:
       add: true
       card_name: Attack +1
       count: 2
+ignore_negative_scenario_effects_and_add_one_plus_one_card:
+  description: Ignore scenario item effects and add one +1 card
+  effects:
+    -
+      add: true
+      card_name: Attack +1
+      count: 1
 ignore_negative_scenario_effects_and_add_two_plus_one_cards:
   description: Ignore scenario item effects and add two +1 cards
   effects:

@@ -177,7 +177,7 @@
   name: 'Rolling Immobilize'
   rolling: true
   immobilize: true
-- 
+-
   name: 'Rolling Heal +1'
   rolling: true
   heal: 1
@@ -185,7 +185,7 @@
   name: 'Rolling Shield 1, self'
   rolling: true
   shield: 1
-- 
+-
   name: 'Attack +0 Refresh item'
   attack: 0
   refresh_item: true
@@ -201,3 +201,7 @@
   name: 'Attack +1 Invisible'
   attack: 1
   invisible: true
+-
+  name: 'Attack +1 Wind'
+  attack: 1
+  wind: true
