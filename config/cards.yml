@@ -138,13 +138,13 @@
   rolling: true
   ice: true
 -
-  name: 'Rolling Sun'
+  name: 'Rolling Light'
   rolling: true
-  sun: true
+  light: true
 -
-  name: 'Rolling Night'
+  name: 'Rolling Dark'
   rolling: true
-  night: true
+  dark: true
 -
   name: 'Rolling Poison'
   rolling: true

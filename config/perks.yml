@@ -212,16 +212,16 @@ add_one_rolling_nature_and_one_rolling_wind_card:
       add: true
       card_name: Rolling Wind
       count: 1
-add_one_rolling_sun_and_one_rolling_night_card:
-  description: Add one Rolling Sun and one Rolling Night card
+add_one_rolling_light_and_one_rolling_dark_card:
+  description: Add one Rolling Light and one Rolling Dark card
   effects:
     -
       add: true
-      card_name: Rolling Sun
+      card_name: Rolling Light
       count: 1
     -
       add: true
-      card_name: Rolling Night
+      card_name: Rolling Dark
       count: 1
 add_two_rolling_poison_cards:
   description: Add two Rolling POISON cards
@@ -315,12 +315,12 @@ add_two_rolling_heal_plus_one_cards:
       add: true
       card_name: Rolling Heal +1
       count: 2
-add_two_rolling_sun_cards:
-  description: Add two Rolling Sun cards
+add_two_rolling_light_cards:
+  description: Add two Rolling Light cards
   effects:
     -
       add: true
-      card_name: Rolling Sun
+      card_name: Rolling Light
       count: 2
 add_two_rolling_shield_1_self_cards:
   description: Add two Rolling Shield 1, Self cards
