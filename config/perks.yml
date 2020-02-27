@@ -295,18 +295,46 @@ replace_two_plus_one_cards_with_two_plus_two_cards:
       card_name: Attack +2
       count: 2
 add_three_rolling_pull_one_cards:
-  description: Add three rolling PULL 1 cards
+  description: Add three Rolling PULL 1 cards
   effects:
     -
       add: true
       card_name: Rolling Pull 1
       count: 3
 add_two_rolling_immobilize_cards:
-  description: Add two rolling IMMOBILIZE cards
+  description: Add two Rolling IMMOBILIZE cards
   effects:
     -
       add: true
       card_name: Rolling Immobilize
+      count: 2
+add_two_rolling_heal_plus_one_cards:
+  description: Add two Rolling Heal +1 cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Heal +1
+      count: 2
+add_two_rolling_sun_cards:
+  description: Add two Rolling Sun cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Sun
+      count: 2
+add_two_rolling_shield_1_self_cards:
+  description: Add two Rolling Shield 1, Self cards
+  effects:
+    -
+      add: true
+      card_name: Rolling Shield 1, self
+      count: 2
+ignore_negative_item_effects_and_add_two_plus_one_cards:
+  description: Ignore negative item effects and add two +1 cards
+  effects:
+    -
+      add: true
+      card_name: Attack +1
       count: 2
 ignore_negative_scenario_effects:
   description: Ignore negative scenario effects

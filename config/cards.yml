@@ -169,3 +169,11 @@
   name: 'Rolling Immobilize'
   rolling: true
   immobilize: true
+- 
+  name: 'Rolling Heal +1'
+  rolling: true
+  heal: 1
+-
+  name: 'Rolling Shield 1, self'
+  rolling: true
+  shield: 1
