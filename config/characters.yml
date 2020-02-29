@@ -1,6 +1,14 @@
 ---
 beast_tyrant:
   perks:
+    remove_two_minus_one_cards: 1
+    replace_one_minus_one_card_with_one_plus_one_card: 3
+    replace_one_plus_zero_card_with_one_plus_two_card: 2
+    add_one_plus_one_wound_card: 2
+    add_one_plus_one_immobilize_card: 2
+    add_two_rolling_heal_plus_one_cards: 3
+    add_two_rolling_nature_cards: 1
+    ignore_negative_scenario_effects: 1
 berserker:
   perks:
     remove_two_minus_one_cards: 1
@@ -40,8 +48,31 @@ cragheart:
     ignore_negative_scenario_effects: 1
 doomstalker:
   perks:
+    remove_two_minus_one_cards: 2
+    replace_two_plus_zero_cards_with_two_plus_one_cards: 3
+    add_two_rolling_plus_one_cards: 2
+    add_one_plus_two_muddle_card: 1
+    add_one_plus_one_poison_card: 1
+    add_one_plus_one_wound_card: 1
+    add_one_plus_one_immobilize_card: 1
+    add_one_plus_zero_stun_card: 1
+    add_one_rolling_add_target_card: 2
+    ignore_negative_scenario_effects: 1
 elementalist:
   perks:
+    remove_two_minus_one_cards: 2
+    replace_one_minus_one_card_with_one_plus_one_card: 1
+    replace_one_plus_zero_card_with_one_plus_two_card: 2
+    add_three_plus_zero_fire_cards: 1
+    add_three_plus_zero_ice_cards: 1
+    add_three_plus_zero_air_cards: 1
+    add_three_plus_zero_nature_cards: 1
+    replace_two_plus_zero_cards_with_one_plus_zero_fire_and_one_plus_zero_nature_card: 1
+    replace_two_plus_zero_cards_with_one_plus_zero_ice_and_one_plus_zero_air_card: 1
+    add_two_plus_one_push_one_cards: 1
+    add_one_plus_one_wound_card: 1
+    add_one_plus_zero_stun_card: 1
+    add_one_plus_zero_add_target_card: 1
 mindthief:
   perks:
     remove_two_minus_one_cards: 2
@@ -80,7 +111,6 @@ plagueherald:
     add_two_rolling_immobilize_cards: 1
     add_one_rolling_stun_card: 2
     ignore_negative_scenario_effects_and_add_one_plus_one_card: 1
-
 quartermaster:
   perks:
     remove_two_minus_one_cards: 2
@@ -95,6 +125,15 @@ quartermaster:
     ignore_negative_item_effects_and_add_two_plus_one_cards: 1
 sawbones:
   perks:
+    remove_two_minus_one_cards: 2
+    remove_four_plus_zero_cards: 1
+    replace_one_plus_zero_card_with_one_plus_two_card: 2
+    add_one_rolling_plus_two_card: 2
+    add_one_plus_one_immobilize_card: 2
+    add_two_rolling_wound_cards: 2
+    add_one_rolling_stun_card: 1
+    add_one_rolling_heal_plus_three_card: 2
+    add_one_plus_zero_refresh_an_item_card: 1
 scoundrel:
   perks:
     remove_two_minus_one_cards: 2
@@ -110,6 +149,18 @@ scoundrel:
     ignore_negative_scenario_effects: 1
 soothsinger:
   perks:
+    remove_two_minus_one_cards: 2
+    remove_one_minus_two_card: 1
+    replace_two_plus_one_cards_with_one_plus_four_card: 2
+    replace_one_plus_zero_card_with_one_plus_one_immobilize_card: 1
+    replace_one_plus_zero_card_with_one_plus_one_disarm_card: 1
+    replace_one_plus_zero_card_with_one_plus_two_wound_card: 1
+    replace_one_plus_zero_card_with_one_plus_two_poison_card: 1
+    replace_one_plus_zero_card_with_one_plus_two_poison_card: 1
+    replace_one_plus_zero_card_with_one_plus_three_muddle_card: 1
+    replace_one_minus_one_card_with_one_plus_zero_stun_card: 1
+    add_three_rolling_plus_one_cards: 1
+    add_two_rolling_curse_cards: 2
 spellweaver:
   perks:
     remove_four_plus_zero_cards: 1

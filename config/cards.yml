@@ -45,6 +45,9 @@
   name: 'Attack +3'
   attack: 3
 -
+  name: 'Attack +4'
+  attack: 4
+-
   name: 'Rolling Attack +1'
   attack: 1
   rolling: true
@@ -214,3 +217,47 @@
   attack: 1
   rolling: true
   disarm: true
+-
+  name: 'Attack +1 Poison'
+  attack: 1
+  poison: true
+-
+  name: 'Attack +0 Fire'
+  attack: 0
+  fire: true
+-
+  name: 'Attack +0 Ice'
+  attack: 0
+  ice: true
+-
+  name: 'Attack +0 Air'
+  attack: 0
+  air: true
+-
+  name: 'Attack +0 Nature'
+  attack: 0
+  nature: true
+-
+  name: Attack +1 Push 1
+  attack: 1
+  push: 1
+-
+  name: Rolling Heal +3
+  rolling: true
+  heal: 3
+-
+  name: Attack +1 Disarm
+  attack: 1
+  disarm: true
+-
+  name: Attack +2 Wound
+  attack: 2
+  wound: true
+-
+  name: Attack +2 Poison
+  attack: 2
+  poison: true
+-
+  name: Attack +3 Muddle
+  attack: 3
+  muddle: true
