@@ -1,3 +1,16 @@
+# Todo
+- update this readme
+- tests
+    - required tests:
+    - nice to have goals:
+        - write tests to validate each card as expected.
+            - Ex: "replace two X cards with one Y card should net -1 card to the deck"
+    - stretch goal:
+        - write tests to parse/validate syntax/programatically generate cards?
+        - Ex: add_one_plus_foo_card should be able to parse the "add", "plus one", and "foo"
+        - should be able to work with rolling, wound, disarm, add, replace, remove, etc
+        - goal would be to not need the cards.yml after this...
+
 # Gloomhaven
 
 Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/gloomhaven`. To experiment with that code, run `bin/console` for an interactive prompt.
