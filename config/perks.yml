@@ -1,651 +1,555 @@
 ---
-remove_two_minus_one_cards:
-  description: Remove two -1 cards
-  effects:
+add_one_minus_one_dark_card:
+  description: Add one -1 Dark card
+  add:
     -
-      remove: true
-      card_name: Attack -1
-      count: 2
-remove_four_plus_zero_cards:
-  description: Remove four +1 cards
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
-      count: 4
-add_two_plus_one_cards:
-  description: Add two +1 cards
-  effects:
-    -
-      add: true
-      card_name: Attack +1
-      count: 2
-add_one_plus_two_card:
-  description: Add one +2 card
-  effects:
-    -
-      add: true
-      card_name: Attack +2
+      card_name: Attack -1 Dark
       count: 1
-add_one_plus_three_card:
-  description: Add one +3 card
-  effects:
+add_one_minus_two_card_and_two_plus_two_cards:
+  description: Add one -2 card and two +2 cards
+  add:
     -
-      add: true
-      card_name: Attack +3
-      count: 1
-replace_one_plus_zero_card_with_one_plus_two_card:
-  description: Replace one +0 card with one +2 card
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
-      count: 1
-    -
-      add: true
-      card_name: Attack +2
-      count: 1
-add_two_rolling_plus_one_cards:
-  description: Add two Rolling +1 cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Attack +1
-      count: 2
-add_three_rolling_muddle_cards:
-  description: Add three Rolling MUDDLE cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Muddle
-      count: 3
-add_three_rolling_push_one_cards:
-  description: Add three Rolling PUSH 1 cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Push 1
-      count: 3
-add_two_rolling_pierce_three_cards:
-  description: Add two Rolling PIERCE 3 cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Pierce 3
-      count: 2
-add_one_rolling_stun_card:
-  description: Add one Rolling STUN card
-  effects:
-    -
-      add: true
-      card_name: Rolling Stun
-      count: 1
-replace_one_minus_two_card_with_one_plus_zero_card:
-  description: Replace one -2 card with one +0 card
-  effects:
-    -
-      remove: true
       card_name: Attack -2
       count: 1
     -
-      add: true
-      card_name: Attack +0
-      count: 1
-replace_one_minus_one_card_with_one_plus_one_card:
-  description: Replace one -1 card with one +1 card
-  effects:
-    -
-      remove: true
-      card_name: Attack -1
-      count: 1
-    -
-      add: true
-      card_name: Attack +1
-      count: 1
-add_one_rolling_disarm_card_and_one_rolling_muddle_card:
-  description: Add one Rolling DISARM card and one Rolling MUDDLE card
-  effects:
-    -
-      add: true
-      card_name: Rolling Disarm
-      count: 1
-    -
-      add: true
-      card_name: Rolling Muddle
-      count: 1
-add_one_rolling_add_target_card:
-  description: Add one Rolling ADD TARGET card
-  effects:
-    -
-      add: true
-      card_name: Rolling Add Target
-      count: 1
-add_one_plus_one_shield_one_self_card:
-  description: Add one +1 Shield 1, Self card
-  effects:
-    -
-      add: true
-      card_name: Attack +1 Shield 1
-      count: 1
-ignore_negative_item_effects_and_add_one_plus_one_card:
-  description: Ignore negative item effects and add one +1 card
-  effects:
-    -
-      add: true
-      card_name: Attack +1
-      count: 1
-replace_one_minus_two_card_with_one_plus_zero_card:
-  description: Replace one -2 card with one +0 card
-  effects:
-    -
-      remove: true
-      card_name: Attack -2
-      count: 1
-    -
-      add: true
-      card_name: Attack +0
-      count: 1
-add_two_rolling_fire_cards:
-  description: Add two Rolling Fire cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Fire
+      card_name: Attack +2
       count: 2
-add_one_plus_one_wound_card:
-  description: Add one +1 WOUND card
-  effects:
+add_one_plus_one_air_card:
+  description: Add one +1 Air card
+  add:
     -
-      add: true
-      card_name: Attack +1 Wound
-      count: 1
-add_one_plus_one_immobilize_card:
-  description: Add one +1 IMMOBILIZE card
-  effects:
-    -
-      add: true
-      card_name: Attack +1 Immobilize
-      count: 1
-add_one_plus_one_heal_plus_two_card:
-  description: Add one +1 Heal +2 card
-  effects:
-    -
-      add: true
-      card_name: Attack +1 Heal +2
-      count: 1
-add_one_plus_zero_add_target_card:
-  description: Add one +0 ADD TARGET card
-  effects:
-    -
-      add: true
-      card_name: Attack +0 Add Target
-      count: 1
-add_one_plus_zero_stun_card:
-  description: Add one +0 STUN card
-  effects:
-    -
-      add: true
-      card_name: Attack +0 Stun
+      card_name: Attack +1 Air
       count: 1
 add_one_plus_one_curse_card:
   description: Add one +0 CURSE card
-  effects:
+  add:
     -
-      add: true
       card_name: Attack +0 Curse
+      count: 1
+add_one_plus_one_heal_plus_two_card:
+  description: Add one +1 Heal +2 card
+  add:
+    -
+      card_name: Attack +1 Heal +2
+      count: 1
+add_one_plus_one_immobilize_card:
+  description: Add one +1 IMMOBILIZE card
+  add:
+    -
+      card_name: Attack +1 Immobilize
+      count: 1
+add_one_plus_one_invisible_card:
+  description: Add one +1 INVISIBLE card
+  add:
+    -
+      card_name: Attack +1 Invisible
+      count: 1
+add_one_plus_one_poison_card:
+  description: Add one +1 POISON card
+  add:
+    -
+      card_name: Attack +1 Poison
+      count: 1
+add_one_plus_one_shield_one_self_card:
+  description: Add one +1 Shield 1, Self card
+  add:
+    -
+      card_name: Attack +1 Shield 1
+      count: 1
+add_one_plus_one_wound_card:
+  description: Add one +1 WOUND card
+  add:
+    -
+      card_name: Attack +1 Wound
+      count: 1
+add_one_plus_three_card:
+  description: Add one +3 card
+  add:
+    -
+      card_name: Attack +3
+      count: 1
+add_one_plus_two_card:
+  description: Add one +2 card
+  add:
+    -
+      card_name: Attack +2
       count: 1
 add_one_plus_two_fire_card:
   description: Add one +2 Fire Card
-  effects:
+  add:
     -
-      add: true
       card_name: Attack +2 Fire
       count: 1
 add_one_plus_two_ice_card:
   description: Add one +2 Ice Card
-  effects:
+  add:
     -
-      add: true
       card_name: Attack +2 Ice
       count: 1
-add_one_rolling_nature_and_one_rolling_air_card:
-  description: Add one Rolling Nature and one Rolling Air card
-  effects:
-    -
-      add: true
-      card_name: Rolling Nature
-      count: 1
-    -
-      add: true
-      card_name: Rolling Air
-      count: 1
-add_one_rolling_light_and_one_rolling_dark_card:
-  description: Add one Rolling Light and one Rolling Dark card
-  effects:
-    -
-      add: true
-      card_name: Rolling Light
-      count: 1
-    -
-      add: true
-      card_name: Rolling Dark
-      count: 1
-add_two_rolling_poison_cards:
-  description: Add two Rolling POISON cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Poison
-      count: 2
-add_two_rolling_muddle_cards:
-  description: Add two Rolling MUDDLE cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Muddle
-      count: 2
-add_one_rolling_invisible_card:
-  description: Add two Rolling INVISIBLE cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Invisible
-      count: 1
-add_one_minus_two_card_and_two_plus_two_cards:
-  description: Add one -2 card and two +2 cards
-  effects:
-    -
-      add: true
-      card_name: Attack -2
-      count: 1
-    -
-      add: true
-      card_name: Attack +2
-      count: 2
 add_one_plus_two_muddle_card:
   description: Add one +2 MUDDLE card
-  effects:
+  add:
     -
-      add: true
       card_name: Attack +2 Muddle
       count: 1
-add_two_rolling_push_two_cards:
-  description: Add two Rolling PUSH 2 cards
-  effects:
+add_one_plus_zero_add_target_card:
+  description: Add one +0 ADD TARGET card
+  add:
     -
-      add: true
-      card_name: Rolling Push 2
-      count: 2
-add_two_rolling_nature_cards:
-  description: Add two Rolling Nature Cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Nature
-      count: 2
-add_two_rolling_air_cards:
-  description: Add two Rolling Air Cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Air
-      count: 2
-replace_two_plus_one_cards_with_two_plus_two_cards:
-  description: Replace two +1 cards with two +2 cards
-  effects:
-    -
-      remove: true
-      card_name: Attack +1
-      count: 2
-    -
-      add: true
-      card_name: Attack +2
-      count: 2
-add_three_rolling_pull_one_cards:
-  description: Add three Rolling PULL 1 cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Pull 1
-      count: 3
-add_two_rolling_immobilize_cards:
-  description: Add two Rolling IMMOBILIZE cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Immobilize
-      count: 2
-add_two_rolling_heal_plus_one_cards:
-  description: Add two Rolling Heal +1 cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Heal +1
-      count: 2
-add_two_rolling_light_cards:
-  description: Add two Rolling Light cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Light
-      count: 2
-add_two_rolling_shield_1_self_cards:
-  description: Add two Rolling Shield 1, Self cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Shield 1, self
-      count: 2
+      card_name: Attack +0 Add Target
+      count: 1
 add_one_plus_zero_refresh_an_item_card:
   description: Add one +0 Refresh an item card
-  effects:
+  add:
     -
-      add: true
       card_name: Attack +0 Refresh item
       count: 1
-add_two_rolling_wound_cards:
-  description: Add two Rolling WOUND cards
-  effects:
+add_one_plus_zero_stun_card:
+  description: Add one +0 STUN card
+  add:
     -
-      add: true
-      card_name: Rolling Wound
-      count: 2
-add_one_rolling_fire_and_one_rolling_air_card:
-  description: Add one Rolling Fire and one Rolling Air card
-  effects:
-    -
-      add: true
-      card_name: Rolling Fire
+      card_name: Attack +0 Stun
       count: 1
+add_one_rolling_add_target_card:
+  description: Add one Rolling ADD TARGET card
+  add:
     -
-      add: true
-      card_name: Rolling Air
+      card_name: Rolling Add Target
       count: 1
 add_one_rolling_dark_and_one_rolling_nature_card:
   description: Add one Rolling Dark and one Rolling Nature card
-  effects:
+  add:
     -
-      add: true
       card_name: Rolling Dark
       count: 1
     -
-      add: true
       card_name: Rolling Nature
       count: 1
-add_one_minus_one_dark_card:
-  description: Add one -1 Dark card
-  effects:
+add_one_rolling_disarm_card_and_one_rolling_muddle_card:
+  description: Add one Rolling DISARM card and one Rolling MUDDLE card
+  add:
     -
-      add: true
-      card_name: Attack -1 Dark
-      count: 1
-replace_one_minus_one_dark_card_with_one_plus_one_dark_card:
-  description: Replace one -1 Dark card with one +1 Dark card
-  effects:
-    -
-      remove: true
-      card_name: Attack -1 Dark
+      card_name: Rolling Disarm
       count: 1
     -
-      add: true
-      card_name: Attack +1 Dark
+      card_name: Rolling Muddle
       count: 1
-add_one_plus_one_invisible_card:
-  description: Add one +1 INVISIBLE card
-  effects:
+add_one_rolling_fire_and_one_rolling_air_card:
+  description: Add one Rolling Fire and one Rolling Air card
+  add:
     -
-      add: true
-      card_name: Attack +1 Invisible
-      count: 1
-add_two_rolling_curse_cards:
-  description: Add two Rolling CURSE cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Curse
-      count: 2
-add_one_plus_one_air_card:
-  description: Add one +1 Air card
-  effects:
-    -
-      add: true
-      card_name: Attack +1 Air
-      count: 1
-add_three_rolling_poison_cards:
-  description: Add three Rolling POISON cards
-  effects:
-    -
-      add: true
-      card_name: Rolling Poison
-      count: 3
-replace_one_plus_zero_card_with_one_rolling_plus_two_card:
-  description: Replace one +0 card with one Rolling +2 card
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
+      card_name: Rolling Fire
       count: 1
     -
-      add: true
-      card_name: Rolling Attack +2
+      card_name: Rolling Air
+      count: 1
+add_one_rolling_heal_plus_three_card:
+  description: Add one Rolling Heal +3 card
+  add:
+    -
+      card_name: Rolling Heal +3
+      count: 1
+add_one_rolling_invisible_card:
+  description: Add two Rolling INVISIBLE cards
+  add:
+    -
+      card_name: Rolling Invisible
+      count: 1
+add_one_rolling_light_and_one_rolling_dark_card:
+  description: Add one Rolling Light and one Rolling Dark card
+  add:
+    -
+      card_name: Rolling Light
+      count: 1
+    -
+      card_name: Rolling Dark
+      count: 1
+add_one_rolling_nature_and_one_rolling_air_card:
+  description: Add one Rolling Nature and one Rolling Air card
+  add:
+    -
+      card_name: Rolling Nature
+      count: 1
+    -
+      card_name: Rolling Air
       count: 1
 add_one_rolling_plus_one_disarm_card:
   description: Add one Rolling +1 DISARM card
-  effects:
+  add:
     -
-      add: true
       card_name: Rolling Attack +1 Disarm
       count: 1
-replace_two_plus_zero_cards_with_two_plus_one_cards:
-  description: Replace two +0 cards with two +1 cards
-  effects:
+add_one_rolling_plus_two_card:
+  description: Add one Rolling +2 card
+  add:
     -
-      remove: true
-      card_name: Attack +0
-      count: 2
-    -
-      add: true
-      card_name: Attack +1
-      count: 2
-add_one_plus_one_poison_card:
-  description: Add one +1 POISON card
-  effects:
-    -
-      add: true
-      card_name: Attack +1 Poison
+      card_name: Rolling Attack +2
       count: 1
+add_one_rolling_stun_card:
+  description: Add one Rolling STUN card
+  add:
+    -
+      card_name: Rolling Stun
+      count: 1
+add_three_plus_zero_air_cards:
+  description: Add three +0 Air cards
+  add:
+    -
+      card_name: Attack +0 Air
+      count: 3
 add_three_plus_zero_fire_cards:
   description: Add three +0 Fire cards
-  effects:
+  add:
     -
-      add: true
       card_name: Attack +0 Fire
       count: 3
 add_three_plus_zero_ice_cards:
   description: Add three +0 Ice cards
-  effects:
+  add:
     -
-      add: true
       card_name: Attack +0 Ice
-      count: 3
-add_three_plus_zero_air_cards:
-  description: Add three +0 Air cards
-  effects:
-    -
-      add: true
-      card_name: Attack +0 Air
       count: 3
 add_three_plus_zero_nature_cards:
   description: Add three +0 Nature cards
-  effects:
+  add:
     -
-      add: true
       card_name: Attack +0 Nature
       count: 3
-replace_two_plus_zero_cards_with_one_plus_zero_fire_and_one_plus_zero_nature_card:
-  description: Replace two +0 cards with one +0 Fire and one +0 Nature card
-  effects:
+add_three_rolling_muddle_cards:
+  description: Add three Rolling MUDDLE cards
+  add:
     -
-      remove: true
-      card_name: Attack +0
-      count: 2
-    -
-      add: true
-      card_name: Attack +0 Fire
-      count: 1
-    -
-      add: true
-      card_name: Attack +0 Nature
-      count: 1
-replace_two_plus_zero_cards_with_one_plus_zero_ice_and_one_plus_zero_air_card:
-  description: Replace two +0 cards with one +0 Ice and one +0 Air card
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
-      count: 2
-    -
-      add: true
-      card_name: Attack +0 Ice
-      count: 1
-    -
-      add: true
-      card_name: Attack +0 Air
-      count: 1
-add_two_plus_one_push_one_cards:
-  description: Add two +1 PUSH 1 cards
-  effects:
-    -
-      add: true
-      card_name: Attack +1 Push 1
-      count: 2
-add_one_rolling_plus_two_card:
-  description: Add one Rolling +2 card
-  effects:
-    -
-      add: true
-      card_name: Rolling Attack +2
-      count: 1
-add_one_rolling_heal_plus_three_card:
-  description: Add one Rolling Heal +3 card
-  effects:
-    -
-      add: true
-      card_name: Rolling Heal +3
-      count: 1
-remove_one_minus_two_card:
-  description: Remove one -2 card
-  effects:
-    -
-      remove: true
-      card_name: Attack -2
-      count: 1
-replace_two_plus_one_cards_with_one_plus_four_card:
-  description: Replace two +1 cards with one +4 card
-  effects:
-    -
-      remove: true
-      card_name: Attack +1
-      count: 2
-    -
-      add: true
-      card_name: Attack +4
-      count: 1
-replace_one_plus_zero_card_with_one_plus_one_immobilize_card:
-  description: Replace one +0 card with one +1 IMMOBILIZE card
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
-      count: 1
-    -
-      add: true
-      card_name: Attack +1 Immobilize
-      count: 1
-replace_one_plus_zero_card_with_one_plus_one_disarm_card:
-  description: Replace one +0 card with one +1 DISARM card
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
-      count: 1
-    -
-      add: true
-      card_name: Attack +1 Disarm
-      count: 1
-replace_one_plus_zero_card_with_one_plus_two_wound_card:
-  description: Replace one +0 card with one +2 WOUND card
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
-      count: 1
-    -
-      add: true
-      card_name: Attack +2 Wound
-      count: 1
-replace_one_plus_zero_card_with_one_plus_two_poison_card:
-  description: Replace one +0 card with one +2 POISON card
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
-      count: 1
-    -
-      add: true
-      card_name: Attack +2 Poison
-      count: 1
-replace_one_plus_zero_card_with_one_plus_three_muddle_card:
-  description: Replace one +0 card with one +3 MUDDLE card
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
-      count: 1
-    -
-      add: true
-      card_name: Attack +3 Muddle
-      count: 1
-replace_one_minus_one_card_with_one_plus_zero_stun_card:
-  description: Replace one +0 card with one +0 STUN card
-  effects:
-    -
-      remove: true
-      card_name: Attack +0
-      count: 1
-    -
-      add: true
-      card_name: Attack +0 Stun
-      count: 1
+      card_name: Rolling Muddle
+      count: 3
 add_three_rolling_plus_one_cards:
   description: Add three Rolling +1 cards
-  effects:
+  add:
     -
-      add: true
       card_name: Rolling Attack +1
       count: 3
-ignore_negative_item_effects_and_add_two_plus_one_cards:
-  description: Ignore negative item effects and add two +1 cards
-  effects:
+add_three_rolling_poison_cards:
+  description: Add three Rolling POISON cards
+  add:
     -
-      add: true
+      card_name: Rolling Poison
+      count: 3
+add_three_rolling_pull_one_cards:
+  description: Add three Rolling PULL 1 cards
+  add:
+    -
+      card_name: Rolling Pull 1
+      count: 3
+add_three_rolling_push_one_cards:
+  description: Add three Rolling PUSH 1 cards
+  add:
+    -
+      card_name: Rolling Push 1
+      count: 3
+add_two_plus_one_cards:
+  description: Add two +1 cards
+  add:
+    -
       card_name: Attack +1
       count: 2
-ignore_negative_scenario_effects_and_add_one_plus_one_card:
-  description: Ignore scenario item effects and add one +1 card
-  effects:
+add_two_plus_one_push_one_cards:
+  description: Add two +1 PUSH 1 cards
+  add:
     -
-      add: true
+      card_name: Attack +1 Push 1
+      count: 2
+add_two_rolling_air_cards:
+  description: Add two Rolling Air Cards
+  add:
+    -
+      card_name: Rolling Air
+      count: 2
+add_two_rolling_curse_cards:
+  description: Add two Rolling CURSE cards
+  add:
+    -
+      card_name: Rolling Curse
+      count: 2
+add_two_rolling_fire_cards:
+  description: Add two Rolling Fire cards
+  add:
+    -
+      card_name: Rolling Fire
+      count: 2
+add_two_rolling_heal_plus_one_cards:
+  description: Add two Rolling Heal +1 cards
+  add:
+    -
+      card_name: Rolling Heal +1
+      count: 2
+add_two_rolling_immobilize_cards:
+  description: Add two Rolling IMMOBILIZE cards
+  add:
+    -
+      card_name: Rolling Immobilize
+      count: 2
+add_two_rolling_light_cards:
+  description: Add two Rolling Light cards
+  add:
+    -
+      card_name: Rolling Light
+      count: 2
+add_two_rolling_muddle_cards:
+  description: Add two Rolling MUDDLE cards
+  add:
+    -
+      card_name: Rolling Muddle
+      count: 2
+add_two_rolling_nature_cards:
+  description: Add two Rolling Nature Cards
+  add:
+    -
+      card_name: Rolling Nature
+      count: 2
+add_two_rolling_pierce_three_cards:
+  description: Add two Rolling PIERCE 3 cards
+  add:
+    -
+      card_name: Rolling Pierce 3
+      count: 2
+add_two_rolling_plus_one_cards:
+  description: Add two Rolling +1 cards
+  add:
+    -
+      card_name: Rolling Attack +1
+      count: 2
+add_two_rolling_poison_cards:
+  description: Add two Rolling POISON cards
+  add:
+    -
+      card_name: Rolling Poison
+      count: 2
+add_two_rolling_push_two_cards:
+  description: Add two Rolling PUSH 2 cards
+  add:
+    -
+      card_name: Rolling Push 2
+      count: 2
+add_two_rolling_shield_1_self_cards:
+  description: Add two Rolling Shield 1, Self cards
+  add:
+    -
+      card_name: Rolling Shield 1, self
+      count: 2
+add_two_rolling_wound_cards:
+  description: Add two Rolling WOUND cards
+  add:
+    -
+      card_name: Rolling Wound
+      count: 2
+ignore_negative_item_effects:
+  description: Ignore negative item effects
+ignore_negative_item_effects_and_add_one_plus_one_card:
+  description: Ignore negative item effects and add one +1 card
+  add:
+    -
       card_name: Attack +1
       count: 1
-ignore_negative_scenario_effects_and_add_two_plus_one_cards:
-  description: Ignore scenario item effects and add two +1 cards
-  effects:
+ignore_negative_item_effects_and_add_two_plus_one_cards:
+  description: Ignore negative item effects and add two +1 cards
+  add:
     -
-      add: true
       card_name: Attack +1
       count: 2
 ignore_negative_scenario_effects:
   description: Ignore negative scenario effects
-ignore_negative_item_effects:
-  description: Ignore negative item effects
+ignore_negative_scenario_effects_and_add_one_plus_one_card:
+  description: Ignore scenario item effects and add one +1 card
+  add:
+    -
+      card_name: Attack +1
+      count: 1
+ignore_negative_scenario_effects_and_add_two_plus_one_cards:
+  description: Ignore scenario item effects and add two +1 cards
+  add:
+    -
+      card_name: Attack +1
+      count: 2
+remove_four_plus_zero_cards:
+  description: Remove four +1 cards
+  remove:
+    -
+      card_name: Attack +0
+      count: 4
+remove_one_minus_two_card:
+  description: Remove one -2 card
+  remove:
+    -
+      card_name: Attack -2
+      count: 1
+remove_two_minus_one_cards:
+  description: Remove two -1 cards
+  remove:
+    -
+      card_name: Attack -1
+      count: 2
+replace_one_minus_one_card_with_one_plus_one_card:
+  description: Replace one -1 card with one +1 card
+  add:
+    -
+      card_name: Attack +1
+      count: 1
+  remove:
+    -
+      card_name: Attack -1
+      count: 1
+replace_one_minus_one_card_with_one_plus_zero_stun_card:
+  description: Replace one +0 card with one +0 STUN card
+  add:
+    -
+      card_name: Attack +0 Stun
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 1
+replace_one_minus_one_dark_card_with_one_plus_one_dark_card:
+  description: Replace one -1 Dark card with one +1 Dark card
+  add:
+    -
+      card_name: Attack +1 Dark
+      count: 1
+  remove:
+    -
+      card_name: Attack -1 Dark
+      count: 1
+replace_one_minus_two_card_with_one_plus_zero_card:
+  description: Replace one -2 card with one +0 card
+  add:
+    -
+      card_name: Attack +0
+      count: 1
+  remove:
+    -
+      card_name: Attack -2
+      count: 1
+replace_one_plus_zero_card_with_one_plus_one_disarm_card:
+  description: Replace one +0 card with one +1 DISARM card
+  add:
+    -
+      card_name: Attack +1 Disarm
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 1
+replace_one_plus_zero_card_with_one_plus_one_immobilize_card:
+  description: Replace one +0 card with one +1 IMMOBILIZE card
+  add:
+    -
+      card_name: Attack +1 Immobilize
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 1
+replace_one_plus_zero_card_with_one_plus_three_muddle_card:
+  description: Replace one +0 card with one +3 MUDDLE card
+  add:
+    -
+      card_name: Attack +3 Muddle
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 1
+replace_one_plus_zero_card_with_one_plus_two_card:
+  description: Replace one +0 card with one +2 card
+  add:
+    -
+      card_name: Attack +2
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 1
+replace_one_plus_zero_card_with_one_plus_two_poison_card:
+  description: Replace one +0 card with one +2 POISON card
+  add:
+    -
+      card_name: Attack +2 Poison
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 1
+replace_one_plus_zero_card_with_one_plus_two_wound_card:
+  description: Replace one +0 card with one +2 WOUND card
+  add:
+    -
+      card_name: Attack +2 Wound
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 1
+replace_one_plus_zero_card_with_one_rolling_plus_two_card:
+  description: Replace one +0 card with one Rolling +2 card
+  add:
+    -
+      card_name: Rolling Attack +2
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 1
+replace_two_plus_one_cards_with_one_plus_four_card:
+  description: Replace two +1 cards with one +4 card
+  add:
+    -
+      card_name: Attack +4
+      count: 1
+  remove:
+    -
+      card_name: Attack +1
+      count: 2
+replace_two_plus_one_cards_with_two_plus_two_cards:
+  description: Replace two +1 cards with two +2 cards
+  add:
+    -
+      card_name: Attack +2
+      count: 2
+  remove:
+    -
+      card_name: Attack +1
+      count: 2
+replace_two_plus_zero_cards_with_one_plus_zero_fire_and_one_plus_zero_nature_card:
+  description: Replace two +0 cards with one +0 Fire and one +0 Nature card
+  add:
+    -
+      card_name: Attack +0 Fire
+      count: 1
+    -
+      card_name: Attack +0 Nature
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 2
+replace_two_plus_zero_cards_with_one_plus_zero_ice_and_one_plus_zero_air_card:
+  description: Replace two +0 cards with one +0 Ice and one +0 Air card
+  add:
+    -
+      card_name: Attack +0 Ice
+      count: 1
+    -
+      card_name: Attack +0 Air
+      count: 1
+  remove:
+    -
+      card_name: Attack +0
+      count: 2
+replace_two_plus_zero_cards_with_two_plus_one_cards:
+  description: Replace two +0 cards with two +1 cards
+  add:
+    -
+      card_name: Attack +1
+      count: 2
+  remove:
+    -
+      card_name: Attack +0
+      count: 2

@@ -1,30 +1,25 @@
 module Gloomhaven
   class Perk
-    attr_reader :description, :effects, :key
+    attr_reader :adds, :description, :key, :removes
 
     def initialize(key)
       validate!(key)
 
-      data = PERKS[key]
+      perk_hash = PERKS[key]
       @key = key
-      @description = data['description']
-      @effects = data['effects']
+      @description = perk_hash['description']
+      @adds = perk_hash['add'] || []
+      @removes = perk_hash['remove'] || []
     end
 
     ##
     # returns a hash of card objects
-    # Ex: Perk.new.carsd
+    # Ex: Perk.new.cards
     # => { add: [Card, Card], remove: [Card, Card, Card] }
     def cards
       result = { 'add' => [], 'remove' => [] }
-      return result unless effects
-
-      effects.each do |effect|
-        card_name = effect['card_name']
-        count = effect['count']
-        count.times { result['add'] << Card.new(card_name) } if effect['add']
-        count.times { result['remove'] << Card.new(card_name) } if effect['remove']
-      end
+      adds.each { |effect| result['add'] = 1.upto(effect['count']).map { Card.new(effect['card_name']) } }
+      removes.each { |effect| result['remove'] = 1.upto(effect['count']).map { Card.new(effect['card_name']) } }
       result
     end
 
