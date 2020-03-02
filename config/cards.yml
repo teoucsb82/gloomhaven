@@ -1,226 +1,26 @@
 ---
 -
+  name: '2x'
+  attack: 0
+  crit: true
+  shuffle: true
+  starting_count: 1
+-
   name: 'Attack +0'
   attack: 0
   starting_count: 6
--
-  name: 'Attack +1'
-  attack: 1
-  starting_count: 5
--
-  name: 'Attack -1'
-  attack: -1
-  starting_count: 5
--
-  name: 'Attack +2'
-  attack: 2
-  starting_count: 1
--
-  name: 'Attack -2'
-  attack: -2
-  starting_count: 1
-- &crit_miss
-  name: 'Null'
-  attack: 0
-  starting_count: 1
-  shuffle: true
-  miss: true
-- &crit_hit
-  name: '2x'
-  attack: 0
-  starting_count: 1
-  shuffle: true
-  crit: true
--
-  <<: *crit_miss
-  name: 'Curse'
-  shuffle: false
-  starting_count: 0
--
-  <<: *crit_hit
-  name: 'Bless'
-  shuffle: false
-  starting_count: 0
--
-  name: 'Attack +3'
-  attack: 3
--
-  name: 'Attack +4'
-  attack: 4
--
-  name: 'Rolling Attack +1'
-  attack: 1
-  rolling: true
--
-  name: 'Rolling Muddle'
-  attack: 0
-  rolling: true
-  muddle: true
--
-  name: 'Rolling Push 1'
-  attack: 0
-  rolling: true
-  push: 1
--
-  name: 'Rolling Pierce 3'
-  attack: 0
-  rolling: true
-  pierce: 3
--
-  name: 'Rolling Stun'
-  attack: 0
-  rolling: true
-  stun: true
--
-  name: 'Rolling Disarm'
-  attack: 0
-  rolling: true
-  disarm: true
--
-  name: 'Rolling Muddle'
-  attack: 0
-  rolling: true
-  muddle: true
--
-  name: 'Rolling Add Target'
-  attack: 0
-  rolling: true
-  add_target: true
--
-  name: 'Attack +1 Shield 1'
-  attack: 1
-  shield: 1
--
-  name: 'Attack +1 Wound'
-  attack: 1
-  wound: true
--
-  name: 'Attack +1 Immobilize'
-  attack: 1
-  immobilize: true
--
-  name: 'Attack +1 Heal +2'
-  attack: 2
-  heal: 2
 -
   name: 'Attack +0 Add Target'
   attack: 0
   add_target: true
 -
-  name: 'Ignore negative scenario effects'
--
-  name: 'Attack +0 Stun'
+  name: 'Attack +0 Air'
   attack: 0
-  stun: true
+  air: true
 -
   name: 'Attack +0 Curse'
   attack: 0
   curse: true
--
-  name: 'Attack +2 Fire'
-  attack: 2
-  fire: true
--
-  name: 'Attack +2 Ice'
-  attack: 2
-  ice: true
--
-  name: 'Rolling Fire'
-  rolling: true
-  fire: true
--
-  name: 'Rolling Nature'
-  rolling: true
-  nature: true
--
-  name: 'Rolling Air'
-  rolling: true
-  air: true
--
-  name: 'Rolling Ice'
-  rolling: true
-  ice: true
--
-  name: 'Rolling Light'
-  rolling: true
-  light: true
--
-  name: 'Rolling Dark'
-  rolling: true
-  dark: true
--
-  name: 'Rolling Poison'
-  rolling: true
-  poison: true
--
-  name: 'Rolling Invisible'
-  rolling: true
-  invisible: true
--
-  name: 'Rolling Wound'
-  rolling: true
-  wound: true
--
-  name: 'Rolling Curse'
-  rolling: true
-  curse: true
--
-  name: 'Attack +2 Muddle'
-  attack: 2
-  muddle: true
--
-  name: 'Rolling Push 2'
-  rolling: true
-  push: 2
--
-  name: 'Rolling Pull 1'
-  rolling: true
-  pull: 1
--
-  name: 'Rolling Immobilize'
-  rolling: true
-  immobilize: true
--
-  name: 'Rolling Heal +1'
-  rolling: true
-  heal: 1
--
-  name: 'Rolling Shield 1, self'
-  rolling: true
-  shield: 1
--
-  name: 'Attack +0 Refresh item'
-  attack: 0
-  refresh_item: true
--
-  name: 'Attack -1 Dark'
-  attack: -1
-  dark: true
--
-  name: 'Attack +1 Dark'
-  attack: 1
-  dark: true
--
-  name: 'Attack +1 Invisible'
-  attack: 1
-  invisible: true
--
-  name: 'Attack +1 Air'
-  attack: 1
-  air: true
--
-  name: 'Rolling Attack +2'
-  attack: 2
-  rolling: true
--
-  name: 'Rolling Attack +1 Disarm'
-  attack: 1
-  rolling: true
-  disarm: true
--
-  name: 'Attack +1 Poison'
-  attack: 1
-  poison: true
 -
   name: 'Attack +0 Fire'
   attack: 0
@@ -230,34 +30,229 @@
   attack: 0
   ice: true
 -
-  name: 'Attack +0 Air'
-  attack: 0
-  air: true
--
   name: 'Attack +0 Nature'
   attack: 0
   nature: true
 -
-  name: Attack +1 Push 1
+  name: 'Attack +0 Refresh item'
+  attack: 0
+  refresh_item: true
+-
+  name: 'Attack +0 Stun'
+  attack: 0
+  stun: true
+-
+  name: 'Attack +1'
   attack: 1
-  push: 1
+  starting_count: 5
 -
-  name: Rolling Heal +3
-  rolling: true
-  heal: 3
+  name: 'Attack +1 Air'
+  attack: 1
+  air: true
 -
-  name: Attack +1 Disarm
+  name: 'Attack +1 Dark'
+  attack: 1
+  dark: true
+-
+  name: 'Attack +1 Disarm'
   attack: 1
   disarm: true
 -
-  name: Attack +2 Wound
+  name: 'Attack +1 Heal +2'
   attack: 2
+  heal: 2
+-
+  name: 'Attack +1 Immobilize'
+  attack: 1
+  immobilize: true
+-
+  name: 'Attack +1 Invisible'
+  attack: 1
+  invisible: true
+-
+  name: 'Attack +1 Poison'
+  attack: 1
+  poison: true
+-
+  name: 'Attack +1 Push 1'
+  attack: 1
+  push: 1
+-
+  name: 'Attack +1 Shield 1'
+  attack: 1
+  shield: 1
+-
+  name: 'Attack +1 Wound'
+  attack: 1
   wound: true
 -
-  name: Attack +2 Poison
+  name: 'Attack +2'
+  attack: 2
+  starting_count: 1
+-
+  name: 'Attack +2 Fire'
+  attack: 2
+  fire: true
+-
+  name: 'Attack +2 Ice'
+  attack: 2
+  ice: true
+-
+  name: 'Attack +2 Muddle'
+  attack: 2
+  muddle: true
+-
+  name: 'Attack +2 Poison'
   attack: 2
   poison: true
 -
-  name: Attack +3 Muddle
+  name: 'Attack +2 Wound'
+  attack: 2
+  wound: true
+-
+  name: 'Attack +3'
+  attack: 3
+-
+  name: 'Attack +3 Muddle'
   attack: 3
   muddle: true
+-
+  name: 'Attack +4'
+  attack: 4
+-
+  name: 'Attack -1'
+  attack: -1
+  starting_count: 5
+-
+  name: 'Attack -1 Dark'
+  attack: -1
+  dark: true
+-
+  name: 'Attack -2'
+  attack: -2
+  starting_count: 1
+-
+  name: 'Bless'
+  attack: 0
+  crit: true
+  shuffle: false
+  starting_count: 0
+-
+  name: 'Curse'
+  attack: 0
+  miss: true
+  shuffle: false
+  starting_count: 0
+-
+  name: 'Null'
+  attack: 0
+  miss: true
+  shuffle: true
+  starting_count: 1
+-
+  name: 'Rolling Add Target'
+  attack: 0
+  add_target: true
+  rolling: true
+-
+  name: 'Rolling Air'
+  air: true
+  rolling: true
+-
+  name: 'Rolling Attack +1'
+  attack: 1
+  rolling: true
+-
+  name: 'Rolling Attack +1 Disarm'
+  attack: 1
+  disarm: true
+  rolling: true
+-
+  name: 'Rolling Attack +2'
+  attack: 2
+  rolling: true
+-
+  name: 'Rolling Curse'
+  curse: true
+  rolling: true
+-
+  name: 'Rolling Dark'
+  dark: true
+  rolling: true
+-
+  name: 'Rolling Disarm'
+  attack: 0
+  disarm: true
+  rolling: true
+-
+  name: 'Rolling Fire'
+  fire: true
+  rolling: true
+-
+  name: 'Rolling Heal +1'
+  heal: 1
+  rolling: true
+-
+  name: 'Rolling Heal +3'
+  heal: 3
+  rolling: true
+-
+  name: 'Rolling Ice'
+  ice: true
+  rolling: true
+-
+  name: 'Rolling Immobilize'
+  immobilize: true
+  rolling: true
+-
+  name: 'Rolling Invisible'
+  invisible: true
+  rolling: true
+-
+  name: 'Rolling Light'
+  light: true
+  rolling: true
+-
+  name: 'Rolling Muddle'
+  attack: 0
+  muddle: true
+  rolling: true
+-
+  name: 'Rolling Nature'
+  nature: true
+  rolling: true
+-
+  name: 'Rolling Pierce 3'
+  attack: 0
+  pierce: 3
+  rolling: true
+-
+  name: 'Rolling Poison'
+  poison: true
+  rolling: true
+-
+  name: 'Rolling Pull 1'
+  pull: 1
+  rolling: true
+-
+  name: 'Rolling Push 1'
+  attack: 0
+  push: 1
+  rolling: true
+-
+  name: 'Rolling Push 2'
+  push: 2
+  rolling: true
+-
+  name: 'Rolling Shield 1, self'
+  rolling: true
+  shield: 1
+-
+  name: 'Rolling Stun'
+  attack: 0
+  rolling: true
+  stun: true
+-
+  name: 'Rolling Wound'
+  rolling: true
+  wound: true
