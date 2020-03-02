@@ -62,7 +62,6 @@ require 'gloomhaven'
 
 # and let's look at the cards
 @deck.cards.to_a
-@deck.cards.to_a
 [
   #<Gloomhaven::Card @name="Attack +0", @attack=0, @crit=false, @miss=false, @rolling=false, @shuffle=false>,
   #<Gloomhaven::Card @name="Attack -2", @attack=-2, @crit=false, @miss=false, @rolling=false, @shuffle=false>,
