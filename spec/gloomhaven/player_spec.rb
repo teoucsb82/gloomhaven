@@ -14,7 +14,7 @@ RSpec.describe Gloomhaven::Player do
   context 'when character class is present' do
     context 'when character class is not supported' do
       let(:character_class) { 'some fake class' }
-      it { expect { player }.to raise_error(TypeError, "Invalid character_class: #{character_class} is not supported") }
+      it { expect { player }.to raise_error(TypeError, "Invalid character_class: #{character_class} is not supported. Must be one of the following: #{Gloomhaven::CHARACTERS.keys}") }
     end
 
     context 'when character class is supported' do

@@ -46,7 +46,9 @@ module Gloomhaven
     def validate_character_class!(character_class)
       raise ArgumentError.new("options[:character_class] cannot be blank") if character_class.nil?
 
-      raise TypeError.new("Invalid character_class: #{character_class} is not supported") unless Gloomhaven::CHARACTERS.keys.include?(character_class.downcase)
+      unless Gloomhaven::CHARACTERS.keys.include?(character_class.downcase)
+        raise TypeError.new("Invalid character_class: #{character_class} is not supported. Must be one of the following: #{Gloomhaven::CHARACTERS.keys}")
+      end
     end
   end
 end
