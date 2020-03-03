@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    gloomhaven (1.0.0)
+    gloomhaven (1.0.6)
 
 GEM
   remote: https://rubygems.org/
@@ -38,10 +38,10 @@ PLATFORMS
 DEPENDENCIES
   bundler (~> 2.0)
   gloomhaven!
-  pry
+  pry (~> 0.12.0)
   rake (~> 13.0)
   rspec (~> 3.0)
-  simplecov
+  simplecov (~> 0.18.4)
 
 BUNDLED WITH
    2.1.4
