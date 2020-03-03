@@ -1,3 +1,5 @@
+- Added player validations for class, name
+
 # 1.0.5
 - Updated error message for Player creation to list valid types
 

@@ -23,6 +23,18 @@ RSpec.describe Gloomhaven::Player do
     end
   end
 
+  context 'when name is missing' do
+    let(:name) { nil }
+    it { expect { player }.to raise_error(ArgumentError, 'options[:name] cannot be blank') }
+  end
+
+  context 'when name is present' do
+    context 'when name is not a String' do
+      let(:name) { 123 }
+      it { expect { player }.to raise_error(ArgumentError, 'options[:name] must be a String') }
+    end
+  end
+
   describe '#add_perk!' do
     subject(:add_perk!) { player.add_perk!(perk) }
 
