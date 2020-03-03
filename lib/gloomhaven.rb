@@ -8,9 +8,9 @@ require 'gloomhaven/perk'
 module Gloomhaven
   class CardNotFoundError < StandardError; end
 
-  CARDS = YAML.load(File.read('lib/config/cards.yml'))
-  CHARACTERS = YAML.load(File.read('lib/config/characters.yml'))
-  PERKS = YAML.load(File.read('lib/config/perks.yml'))
+  CARDS = YAML.load(File.read('config/cards.yml'))
+  CHARACTERS = YAML.load(File.read('config/characters.yml'))
+  PERKS = YAML.load(File.read('config/perks.yml'))
 
   def self.version
     VERSION
