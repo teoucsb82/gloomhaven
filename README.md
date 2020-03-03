@@ -46,6 +46,7 @@ require 'gloomhaven'
 => 19
 
 # Let's bless and curse the deck
+# Note that blessing/cursing a deck will automatically reshuffle the remaining (undrawn) cards.
 @deck.bless!
 @deck.curse!
 
