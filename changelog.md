@@ -1,3 +1,4 @@
+# 1.0.6
 - Updated changelog path
 - Added player validations for class, name
 
