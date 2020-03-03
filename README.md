@@ -1,3 +1,5 @@
+[![Gem Version](https://badge.fury.io/rb/gloomhaven.svg)](https://badge.fury.io/rb/gloomhaven)
+
 # Gloomhaven
 
 Ruby gem for generating Gloomhaven characters and ability decks.
