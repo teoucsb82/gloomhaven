@@ -1,4 +1,4 @@
-# 1.0.7
+# 1.0.7.1
 - Fixed loading issue with pry gem
 
 # 1.0.6
