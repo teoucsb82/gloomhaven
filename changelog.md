@@ -1,3 +1,6 @@
+# 1.0.7
+- Fixed loading issue with pry gem
+
 # 1.0.6
 - Updated changelog path
 - Added player validations for class, name
