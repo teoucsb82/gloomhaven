@@ -150,6 +150,21 @@ RSpec.describe Gloomhaven::Deck do
         expect(deck.drawn_cards.size).to eq(0)
       end
     end
+
+    context 'when the deck is out of cards to draw' do
+      it 'forces a shuffle' do
+        # starting with a full deck
+        expect(deck.cards.size).to eq(20)
+
+        # draw it to empty
+        20.times { deck.draw }
+        expect(deck.cards.size).to eq(0)
+
+        # draw one more time, deck should self-shuffle and return the new card
+        draw
+        expect(deck.cards.size).to eq(19)
+      end
+    end
   end
 
   describe '#drawn_cards' do

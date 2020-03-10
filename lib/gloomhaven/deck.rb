@@ -41,11 +41,14 @@ module Gloomhaven
     end
 
     ##
+    # Shuffles the deck if trying to draw without any cards left in pile.
     # Removes the top card from the deck, adds it to the @drawn_cards array (unless it's a bless/curse)
     # Returns the drawn card.
     # Ex: Deck.new.draw
     # => #<Card >
     def draw
+      shuffle! if @cards.empty?
+
       card = @cards.shift
       @drawn_cards << card unless card.bless? || card.curse?
       card
