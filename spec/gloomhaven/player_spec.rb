@@ -1,37 +1,68 @@
 RSpec.describe Gloomhaven::Player do
   subject(:player) { Gloomhaven::Player.new(options) }
-  let(:options) { { character_class: character_class, name: name } }
+  let(:options) { required_options }
+  let(:required_options) { { character_class: character_class, name: name } }
   let(:character_class) { 'brute' }
   let(:name) { 'Brute Player' }
 
   it { expect(player).to be_a(Gloomhaven::Player) }
 
-  context 'when character class is missing' do
-    let(:character_class) { nil }
-    it { expect { player }.to raise_error(ArgumentError, 'options[:character_class] cannot be blank') }
-  end
+  describe '#validations' do
+    describe 'required options' do
+      context 'when character class is missing' do
+        let(:character_class) { nil }
+        it { expect { player }.to raise_error(ArgumentError, 'options[:character_class] cannot be blank') }
+      end
 
-  context 'when character class is present' do
-    context 'when character class is not supported' do
-      let(:character_class) { 'some fake class' }
-      it { expect { player }.to raise_error(TypeError, "Invalid character_class: #{character_class} is not supported. Must be one of the following: #{Gloomhaven::CHARACTERS.keys}") }
+      context 'when character class is present' do
+        context 'when character class is not supported' do
+          let(:character_class) { 'some fake class' }
+          it { expect { player }.to raise_error(TypeError, "Invalid character_class: #{character_class} is not supported. Must be one of the following: #{Gloomhaven::CHARACTER_NAMES}") }
+        end
+
+        context 'when character class is supported' do
+          let(:character_class) { 'brute' }
+          it { expect { player }.not_to raise_error }
+        end
+      end
+
+      context 'when name is missing' do
+        let(:name) { nil }
+        it { expect { player }.to raise_error(ArgumentError, 'options[:name] cannot be blank') }
+      end
+
+      context 'when name is present' do
+        context 'when name is not a String' do
+          let(:name) { 123 }
+          it { expect { player }.to raise_error(ArgumentError, 'options[:name] must be a String') }
+        end
+      end
     end
 
-    context 'when character class is supported' do
-      let(:character_class) { 'brute' }
-      it { expect { player }.not_to raise_error }
-    end
-  end
+    context 'with additional options' do
+      let(:options) { required_options.merge(gold: gold, xp: xp) }
+      let(:gold) { nil }
+      let(:xp) { nil }
 
-  context 'when name is missing' do
-    let(:name) { nil }
-    it { expect { player }.to raise_error(ArgumentError, 'options[:name] cannot be blank') }
-  end
+      context 'when gold is an integer' do
+        let(:gold) { 10 }
+        it { expect(player.gold).to eq gold }
+      end
 
-  context 'when name is present' do
-    context 'when name is not a String' do
-      let(:name) { 123 }
-      it { expect { player }.to raise_error(ArgumentError, 'options[:name] must be a String') }
+      context 'when gold is not an integer' do
+        let(:gold) { 'gold' }
+        it { expect { player }.to raise_error(ArgumentError, 'options[:gold] must be an Integer') }
+      end
+
+      context 'when xp is an integer' do
+        let(:xp) { 10 }
+        it { expect(player.xp).to eq xp }
+      end
+
+      context 'when xp is not an integer' do
+        let(:xp) { 'xp' }
+        it { expect { player }.to raise_error(ArgumentError, 'options[:xp] must be an Integer') }
+      end
     end
   end
 

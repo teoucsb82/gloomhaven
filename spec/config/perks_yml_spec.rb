@@ -1,4 +1,3 @@
-
 RSpec.describe Gloomhaven::PERKS do
   subject(:perks) { Gloomhaven::PERKS }
 

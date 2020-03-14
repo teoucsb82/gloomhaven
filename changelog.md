@@ -1,3 +1,7 @@
+# 1.0.8
+- Allow gold, xp
+- Update characters yaml to return name, spoiler_name, number. Sort by number
+
 # 1.0.7.1
 - Fixed loading issue with pry gem
 

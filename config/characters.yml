@@ -1,5 +1,8 @@
 ---
-beast_tyrant:
+-
+  name: Beast Tyrant
+  spoiler_name: Two Mini
+  number: 17
   perks:
     remove_two_minus_one_cards: 1
     replace_one_minus_one_card_with_one_plus_one_card: 3
@@ -9,7 +12,10 @@ beast_tyrant:
     add_two_rolling_heal_plus_one_cards: 3
     add_two_rolling_nature_cards: 1
     ignore_negative_scenario_effects: 1
-berserker:
+-
+  name: Berserker
+  spoiler_name: Lightning Bolt
+  number: 12
   perks:
     remove_two_minus_one_cards: 1
     remove_four_plus_zero_cards: 1
@@ -21,7 +27,9 @@ berserker:
     add_two_rolling_heal_plus_one_cards: 1
     add_one_plus_two_fire_card: 2
     ignore_negative_item_effects: 1
-brute:
+-
+  name: Brute
+  number: 1
   perks:
     remove_two_minus_one_cards: 1
     replace_one_minus_one_card_with_one_plus_one_card: 1
@@ -34,7 +42,9 @@ brute:
     add_one_rolling_add_target_card: 2
     add_one_plus_one_shield_one_self_card: 1
     ignore_negative_item_effects_and_add_one_plus_one_card: 1
-cragheart:
+-
+  name: Cragheart
+  number: 5
   perks:
     remove_four_plus_zero_cards: 1
     replace_one_minus_one_card_with_one_plus_one_card: 3
@@ -46,7 +56,10 @@ cragheart:
     add_two_rolling_air_cards: 1
     ignore_negative_item_effects: 1
     ignore_negative_scenario_effects: 1
-doomstalker:
+-
+  name: Doomstalker
+  spoiler_name: Angry Face
+  number: 14
   perks:
     remove_two_minus_one_cards: 2
     replace_two_plus_zero_cards_with_two_plus_one_cards: 3
@@ -58,7 +71,10 @@ doomstalker:
     add_one_plus_zero_stun_card: 1
     add_one_rolling_add_target_card: 2
     ignore_negative_scenario_effects: 1
-elementalist:
+-
+  name: Elementalist
+  spoiler_name: Triforce
+  number: 16
   perks:
     remove_two_minus_one_cards: 2
     replace_one_minus_one_card_with_one_plus_one_card: 1
@@ -73,7 +89,9 @@ elementalist:
     add_one_plus_one_wound_card: 1
     add_one_plus_zero_stun_card: 1
     add_one_plus_zero_add_target_card: 1
-mindthief:
+-
+  name: Mindthief
+  number: 6
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -87,7 +105,10 @@ mindthief:
     add_one_rolling_stun_card: 1
     add_one_rolling_disarm_card_and_one_rolling_muddle_card: 1
     ignore_negative_scenario_effects: 1
-nightshroud:
+-
+  name: Nightshroud
+  spoiler_name: Eclipse/Moon
+  number: 10
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -99,7 +120,10 @@ nightshroud:
     add_two_rolling_curse_cards: 2
     add_one_rolling_add_target_card: 1
     ignore_negative_scenario_effects_and_add_two_plus_one_cards: 1
-plagueherald:
+-
+  name: Plagueherald
+  spoiler_name: Cthulu
+  number: 11
   perks:
     replace_one_minus_two_card_with_one_plus_zero_card: 1
     replace_one_minus_one_card_with_one_plus_one_card: 2
@@ -111,7 +135,10 @@ plagueherald:
     add_two_rolling_immobilize_cards: 1
     add_one_rolling_stun_card: 2
     ignore_negative_scenario_effects_and_add_one_plus_one_card: 1
-quartermaster:
+-
+  name: Quartermaster
+  spoiler_name: Three Spears
+  number: 8
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -123,7 +150,10 @@ quartermaster:
     add_one_rolling_add_target_card: 1
     add_one_plus_zero_refresh_an_item_card: 3
     ignore_negative_item_effects_and_add_two_plus_one_cards: 1
-sawbones:
+-
+  name: Sawbones
+  spoiler_name: Saw
+  number: 15
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -134,7 +164,9 @@ sawbones:
     add_one_rolling_stun_card: 1
     add_one_rolling_heal_plus_three_card: 2
     add_one_plus_zero_refresh_an_item_card: 1
-scoundrel:
+-
+  name: Scoundrel
+  number: 4
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -147,7 +179,10 @@ scoundrel:
     add_two_rolling_muddle_cards: 1
     add_one_rolling_invisible_card: 1
     ignore_negative_scenario_effects: 1
-soothsinger:
+-
+  name: Soothsinger
+  spoiler_name: Music Note
+  number: 13
   perks:
     remove_two_minus_one_cards: 2
     remove_one_minus_two_card: 1
@@ -161,7 +196,9 @@ soothsinger:
     replace_one_minus_one_card_with_one_plus_zero_stun_card: 1
     add_three_rolling_plus_one_cards: 1
     add_two_rolling_curse_cards: 2
-spellweaver:
+-
+  name: Spellweaver
+  number: 3
   perks:
     remove_four_plus_zero_cards: 1
     replace_one_minus_one_card_with_one_plus_one_card: 2
@@ -174,7 +211,10 @@ spellweaver:
     add_one_plus_two_ice_card: 2
     add_one_rolling_nature_and_one_rolling_air_card: 1
     add_one_rolling_light_and_one_rolling_dark_card: 1
-summoner:
+-
+  name: Summoner
+  spoiler_name: Concentric Circles
+  number: 9
   perks:
     remove_two_minus_one_cards: 1
     replace_one_minus_two_card_with_one_plus_zero_card: 1
@@ -186,7 +226,10 @@ summoner:
     add_one_rolling_fire_and_one_rolling_air_card: 1
     add_one_rolling_dark_and_one_rolling_nature_card: 1
     ignore_negative_scenario_effects_and_add_two_plus_one_cards: 1
-sunkeeper:
+-
+  name: Sunkeeper
+  spoiler_name: Sun
+  number: 7
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -199,7 +242,9 @@ sunkeeper:
     add_two_rolling_shield_1_self_cards: 1
     ignore_negative_item_effects_and_add_two_plus_one_cards: 1
     ignore_negative_scenario_effects: 1
-tinkerer:
+-
+  name: Tinkerer
+  number: 2
   perks:
     remove_two_minus_one_cards: 2
     replace_one_minus_two_card_with_one_plus_zero_card: 1

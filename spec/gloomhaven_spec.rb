@@ -17,25 +17,8 @@ RSpec.describe Gloomhaven do
   describe '::CHARACTERS' do
     subject(:characters) { Gloomhaven::CHARACTERS }
     it { expect(characters).not_to be nil }
-    it { expect(characters).to be_a(Hash) }
+    it { expect(characters).to be_a(Array) }
     it { expect(characters.length).to eq(17) }
-    it { expect(characters.keys).to include('beast_tyrant') }
-    it { expect(characters.keys).to include('berserker') }
-    it { expect(characters.keys).to include('brute') }
-    it { expect(characters.keys).to include('cragheart') }
-    it { expect(characters.keys).to include('doomstalker') }
-    it { expect(characters.keys).to include('elementalist') }
-    it { expect(characters.keys).to include('mindthief') }
-    it { expect(characters.keys).to include('nightshroud') }
-    it { expect(characters.keys).to include('plagueherald') }
-    it { expect(characters.keys).to include('quartermaster') }
-    it { expect(characters.keys).to include('sawbones') }
-    it { expect(characters.keys).to include('scoundrel') }
-    it { expect(characters.keys).to include('soothsinger') }
-    it { expect(characters.keys).to include('spellweaver') }
-    it { expect(characters.keys).to include('summoner') }
-    it { expect(characters.keys).to include('sunkeeper') }
-    it { expect(characters.keys).to include('tinkerer') }
   end
 
   describe '::PERKS' do
