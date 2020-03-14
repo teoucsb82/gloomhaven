@@ -3,6 +3,9 @@
   name: Beast Tyrant
   spoiler_name: Two Mini
   number: 17
+  hand_size: 10
+  health_scale: Low
+  hex_color: a47760
   perks:
     remove_two_minus_one_cards: 1
     replace_one_minus_one_card_with_one_plus_one_card: 3
@@ -16,6 +19,9 @@
   name: Berserker
   spoiler_name: Lightning Bolt
   number: 12
+  hand_size: 10
+  health_scale: High
+  hex_color: c05754
   perks:
     remove_two_minus_one_cards: 1
     remove_four_plus_zero_cards: 1
@@ -30,6 +36,9 @@
 -
   name: Brute
   number: 1
+  hand_size: 10
+  health_scale: High
+  hex_color: 5a7ebc
   perks:
     remove_two_minus_one_cards: 1
     replace_one_minus_one_card_with_one_plus_one_card: 1
@@ -45,6 +54,9 @@
 -
   name: Cragheart
   number: 5
+  hand_size: 11
+  health_scale: High
+  hex_color: 8c9447
   perks:
     remove_four_plus_zero_cards: 1
     replace_one_minus_one_card_with_one_plus_one_card: 3
@@ -60,6 +72,9 @@
   name: Doomstalker
   spoiler_name: Angry Face
   number: 14
+  hand_size: 12
+  health_scale: Medium
+  hex_color: 69c1ec
   perks:
     remove_two_minus_one_cards: 2
     replace_two_plus_zero_cards_with_two_plus_one_cards: 3
@@ -75,6 +90,9 @@
   name: Elementalist
   spoiler_name: Triforce
   number: 16
+  hand_size: 10
+  health_scale: Low
+  hex_color: 9e9e9e
   perks:
     remove_two_minus_one_cards: 2
     replace_one_minus_one_card_with_one_plus_one_card: 1
@@ -92,6 +110,9 @@
 -
   name: Mindthief
   number: 6
+  hand_size: 10
+  health_scale: Low
+  hex_color: 6a7c9a
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -109,6 +130,9 @@
   name: Nightshroud
   spoiler_name: Eclipse/Moon
   number: 10
+  hand_size: 9
+  health_scale: Medium
+  hex_color: 9f9fcb
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -124,6 +148,9 @@
   name: Plagueherald
   spoiler_name: Cthulu
   number: 11
+  hand_size: 11
+  health_scale: Low
+  hex_color: 89c4ba
   perks:
     replace_one_minus_two_card_with_one_plus_zero_card: 1
     replace_one_minus_one_card_with_one_plus_one_card: 2
@@ -139,6 +166,9 @@
   name: Quartermaster
   spoiler_name: Three Spears
   number: 8
+  hand_size: 9
+  health_scale: High
+  hex_color: cc8c3e
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -154,6 +184,9 @@
   name: Sawbones
   spoiler_name: Saw
   number: 15
+  hand_size: 10
+  health_scale: Medium
+  hex_color: dee0c9
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -167,6 +200,9 @@
 -
   name: Scoundrel
   number: 4
+  hand_size: 9
+  health_scale: Medium
+  hex_color: b0cf76
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -183,6 +219,9 @@
   name: Soothsinger
   spoiler_name: Music Note
   number: 13
+  hand_size: 9
+  health_scale: Low
+  hex_color: d0837d
   perks:
     remove_two_minus_one_cards: 2
     remove_one_minus_two_card: 1
@@ -199,6 +238,9 @@
 -
   name: Spellweaver
   number: 3
+  hand_size: 8
+  health_scale: Low
+  hex_color: aa7baf
   perks:
     remove_four_plus_zero_cards: 1
     replace_one_minus_one_card_with_one_plus_one_card: 2
@@ -215,6 +257,9 @@
   name: Summoner
   spoiler_name: Concentric Circles
   number: 9
+  hand_size: 9
+  health_scale: Medium
+  hex_color: da76a1
   perks:
     remove_two_minus_one_cards: 1
     replace_one_minus_two_card_with_one_plus_zero_card: 1
@@ -230,6 +275,9 @@
   name: Sunkeeper
   spoiler_name: Sun
   number: 7
+  hand_size: 11
+  health_scale: High
+  hex_color: ebc355
   perks:
     remove_two_minus_one_cards: 2
     remove_four_plus_zero_cards: 1
@@ -245,6 +293,9 @@
 -
   name: Tinkerer
   number: 2
+  hand_size: 12
+  health_scale: Medium
+  hex_color: c1b691
   perks:
     remove_two_minus_one_cards: 2
     replace_one_minus_two_card_with_one_plus_zero_card: 1

@@ -1,3 +1,10 @@
+# 1.0.9
+- add class Character for character logic
+  - moved most of logic from Player to character, add a @character to player initialize, delegate to char
+    - player keeps things like gold, xp, items, perks
+  - takes in class name
+  - Track hand_size, hex_code (color theme for character cards), character number, perks, health_scale
+
 # 1.0.8
 - Allow gold, xp
 - Update characters yaml to return name, spoiler_name, number. Sort by number

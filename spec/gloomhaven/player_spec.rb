@@ -94,7 +94,7 @@ RSpec.describe Gloomhaven::Player do
             expect(player.perks.count).to eq(0)
             expect { player.add_perk!(perk) }.not_to raise_error
             expect(player.perks.count).to eq(1)
-            expect { player.add_perk!(perk) }.to raise_error(ArgumentError, "#{character_class} has the maximum number of #{perk.description} perks")
+            expect { player.add_perk!(perk) }.to raise_error(ArgumentError, "#{player.character} has the maximum number of #{perk.description} perks")
             expect(player.perks.count).to eq(1)
           end
         end
@@ -106,7 +106,7 @@ RSpec.describe Gloomhaven::Player do
 
         it 'raises an error and does not update the attack modifier deck' do
           expect(player).not_to receive(:update_attack_modifier_deck_from!).with(perk)
-          expect { add_perk! }.to raise_error(ArgumentError, "#{character_class} cannot select #{perk.description}. Must be one of the following: #{player.send(:character_class_perks)}")
+          expect { add_perk! }.to raise_error(ArgumentError, "#{player.character} cannot select #{perk.description}. Must be one of the following: #{player.send(:class_perks)}")
         end
       end
     end

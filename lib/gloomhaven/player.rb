@@ -1,13 +1,12 @@
 module Gloomhaven
   class Player
 
-    attr_reader :character_class, :name, :deck
-    attr_accessor :gold, :items, :perks, :xp
+    attr_reader :character, :deck, :name, :items, :perks
+    attr_accessor :gold, :xp
 
     def initialize(options = {})
       validate!(options)
-
-      @character_class = options[:character_class].downcase
+      @character = Character.new(options[:character_class])
       @deck = Deck.new
       @name = options[:name]
       @gold = options[:gold] || 0
@@ -18,20 +17,16 @@ module Gloomhaven
 
     def add_perk!(perk)
       raise TypeError.new('Perk must be a Gloomhaven::Perk') unless perk.is_a?(Gloomhaven::Perk)
-      raise ArgumentError.new("#{character_class} cannot select #{perk.description}. Must be one of the following: #{character_class_perks}") unless character_class_perks.include?(perk.key)
-      raise ArgumentError.new("#{character_class} has the maximum number of #{perk.description} perks") if existing_perk_count(perk) >= character_perk_limit(perk)
+      raise ArgumentError.new("#{character} cannot select #{perk.description}. Must be one of the following: #{class_perks}") unless class_perks.include?(perk.key)
+      raise ArgumentError.new("#{character} has the maximum number of #{perk.description} perks") if existing_perk_count(perk) >= character_perk_limit(perk)
       update_attack_modifier_deck_from!(perk)
       @perks << perk
     end
 
     private
 
-    def character
-      CHARACTERS.detect { |character| character['name'].downcase == character_class.downcase }
-    end
-
-    def character_class_perks
-      character['perks'].keys
+    def class_perks
+      character.perks.keys
     end
 
     def existing_perk_count(perk)
@@ -39,7 +34,7 @@ module Gloomhaven
     end
 
     def character_perk_limit(perk)
-      character['perks'][perk.key]
+      character.perks[perk.key]
     end
 
     def update_attack_modifier_deck_from!(perk)
